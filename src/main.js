@@ -1,11 +1,11 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import HelloWorld from './components/HelloWorld.vue';
+import splash from './components/splash.vue';
 import Project from './components/Project.vue';
 import {createRouter, createWebHistory} from 'vue-router';
 
 const routes = [
-	{path: '/', component: HelloWorld},
+	{path: '/', component: splash},
 
 	{path: '/projects/:projectid', component: Project}
 
