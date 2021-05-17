@@ -1,33 +1,34 @@
 <template>
-  <h1>{{ msg }}</h1>
-
-  <p>
-    <a href="https://vitejs.dev/guide/features.html" target="_blank">
-      Vite Documentation
-    </a>
-    |
-    <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Documentation</a>
-  </p>
-
-  <button @click="state.count++">count is: {{ state.count }}</button>
-  <p>
-    Edit
-    <code>components/HelloWorld.vue</code> to test hot module replacement.
-  </p>
+  <ul>
+    <li v-for='(project, id) in projects' :key='project.name'>
+      <router-link :to='"/projects/" + id'>
+        {{project.name}}
+      </router-link>
+    </li>
+  </ul>
 </template>
 
-<script setup>
-import { defineProps, reactive } from 'vue'
+<script>
+import projectsJson from '../projects.json';
+import {defineComponent} from 'vue';
 
-defineProps({
-  msg: String
+export default defineComponent({
+	name: 'HelloWorld',
+
+	components: {
+	},
+
+	data() {
+    return {
+      projects: []
+    };
+	},
+
+	created() {
+		this.projects = projectsJson;
+	},
 })
-
-const state = reactive({ count: 0 })
 </script>
 
 <style scoped>
-a {
-  color: #42b983;
-}
 </style>
