@@ -1,6 +1,6 @@
 <template>
 
-	<link href="../bootstrap-grid.css" rel="stylesheet">
+	<!-- <link href="/bootstrap-grid.css" rel="stylesheet"> -->
 	<website-header/>
 
 	<div class="container-fluid">
@@ -24,8 +24,6 @@
 			<div class="col-1"></div>
 		</div>
 	</div>
-
-	<!-- <HelloWorld msg='testing' /> -->
 
 </template>
 
