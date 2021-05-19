@@ -1,12 +1,23 @@
 <template>
 
+	<link href="../bootstrap.css" rel="stylesheet">
 	<website-header/>
 
-	<h1>{{project.name}}</h1>
-
-	<img :src='project.img' />
-
-	<p>{{project.desc}}</p>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>{{project.name}}</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<p>{{project.desc}}</p>
+			</div>
+			<div class="col-md-6">
+				<img :src='project.img'/>
+			</div>
+		</div>
+	</div>
 
 	<!-- <HelloWorld msg='testing' /> -->
 
@@ -19,7 +30,7 @@ import WebsiteHeader from './website-header.vue';
 import {defineComponent} from 'vue';
 
 export default defineComponent({
-	name: 'Project',
+	name: 'project',
 
 	components: {
 		WebsiteHeader
@@ -36,11 +47,15 @@ export default defineComponent({
 	},
 
 	created() {
-		// const projectid = parseInt(this.$route.params.projectid);
-		// this.project = projectsJson[projectid];
+		const projectid = parseInt(this.$route.params.projectid);
+		this.project = projectsJson[projectid];
 	},
 })
 </script>
 
 <style scoped>
+
+.container{
+}
+
 </style>
