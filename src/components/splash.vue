@@ -9,21 +9,56 @@
   </ul>
   -->
 
+<!--
+[
+  {
+    "category": "technology",
+    "projects": [
+      {
+        "project": "admsad",
+        "autho
+      }
+    ]
+  },
+  {
+    "category": 
+  }
+]
+
+[
+  {
+    "project": "hello",
+    "authors": "asdmsad",
+    "category": "adlsad",
+    "tags": ["amsdsmd", "dsadm"]
+  }
+]
+
+<div v-for="category in categories">
+
+  <h1>{{category.name}}</h1>
+
+  <div v-for="project in category.projects">
+    {{project.title}}
+  </div>
+</div>-->
+
   <div class="main-contain">
         
     <div class="menu">
       <ul>
-        <li><a href="#">PROJECTS</a></li>
         <li><a href="#">ABOUT</a></li>
+        <li><a href="#">PROJECTS</a></li>
       </ul>
     </div>
             
     <div class="logo">
-      <img src="/src/assets/ENG%20EOYS%202021_logo%20main.svg">
+      <!--<img src="/images/ENG EOYS 2021_logo main.svg">-->
+      <img src="/images/logo-splash.svg">
     </div>
             
     <div class="curve">
-      <img src="/src/assets/ENG%20EOYS%202021_bg%20assets-20.svg">
+      <img src="/images/bg-assets-20.svg">
     </div>
             
     </div>
@@ -56,14 +91,6 @@ export default defineComponent({
 *{
     margin: 0px;
     padding: 0px;
-    /background-color: #eaded6;
-}
-
-.main-contain{
-}
-
-.menu{
-    /padding: 20px 10px;
 }
 
 .menu ul{
@@ -81,9 +108,8 @@ export default defineComponent({
     color: #c14e0e;
     font-size: 18px;
     text-align: center;
-    margin: 20px 60px 0px 0px;
+    margin: 40px 60px 0px 0px;
     text-decoration: none;
-    font-weight: bold;
     border-bottom: 3px solid rgba(0,0,0,0);
     transition: border-bottom 0.5s;
 }
@@ -96,14 +122,11 @@ export default defineComponent({
     color: #c14e0e;
 }
 
-.logo{
-}
-
 .logo img{
     display: block;
     margin: auto;
-    padding-top: 18vh;
-    width: 90%;
+    padding-top: 14vh;
+    width: 82vw;
 }
 
 .curve img{
