@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "deploy": "vite build;rm -rf docs;mv dist docs;cp docs/index.html docs/404.html"
   },
   "dependencies": {
     "@vue/cli": "^4.5.13",
