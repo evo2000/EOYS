@@ -68,10 +68,10 @@ export default defineComponent({
     display: block;
     color: #c14e0e;
     font-size: 18px;
+    font-family: serif;
     text-align: center;
     margin: 40px 60px 0px 0px;
     text-decoration: none;
-    font-weight: bold;
     border-bottom: 2px solid rgba(0,0,0,0);
     transition: border-bottom 0.5s;
 }
