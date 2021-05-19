@@ -85,7 +85,7 @@ export default defineComponent({
 }
 
 .menu img{
-    height: 60px;
+    height: 80px;
     padding: 20px 0px 0px 20px; 
 }
 
