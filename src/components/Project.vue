@@ -1,19 +1,24 @@
 <template>
 
-	<link href="../bootstrap.css" rel="stylesheet">
+	<link href="../bootstrap-grid.css" rel="stylesheet">
 	<website-header/>
 
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-3 leftline">
+				<img src="/images/bg-assets-19.svg">
+			</div>
+			<div class="col-8">
 				<h1>{{project.name}}</h1>
 			</div>
+			<div class="col-1"></div>
 		</div>
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col-3"></div>
+			<div class="col-5">
 				<p>{{project.desc}}</p>
 			</div>
-			<div class="col-md-6">
+			<div class="col-4 media">
 				<img :src='project.img'/>
 			</div>
 		</div>
@@ -55,7 +60,16 @@ export default defineComponent({
 
 <style scoped>
 
-.container{
+.container-fluid{
+	color: #c14e0e;
+}
+
+.leftline img{
+	padding-top: 40px;
+}
+
+.media img{
+	border: 2px solid #c14e0e;
 }
 
 </style>
