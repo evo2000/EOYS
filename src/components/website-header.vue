@@ -1,19 +1,19 @@
 <template>
 
     <div class="main-contain">
-            
+
             <div class="menu">
                 <ul>
                     <li><a href="#">ABOUT</a></li>
-                    <li class="act"><a href="#">PROJECTS</a></li>
+                    <li class="act"><router-link to="/projects">PROJECTS</router-link></li>
                 </ul>
                 <img src="/images/logo.svg">
             </div>
-            
+
             <div class="curve">
                 <img src="/images/bg-assets-22.svg">
             </div>
-            
+
         </div>
 
 </template>
@@ -86,7 +86,7 @@ export default defineComponent({
 
 .menu img{
     height: 60px;
-    padding: 20px 0px 0px 20px; 
+    padding: 20px 0px 0px 20px;
 }
 
 .curve img{

@@ -2,11 +2,19 @@
 	{
 		"name": "Jenna Scott - How Legislators (Don't) Use Data to Make Decisions: Green Building Laws in South Dakota",
 		"desc": " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget cursus ligula, non ornare velit. Integer tristique mauris ex, nec sodales dui porta venenatis. Fusce ac ipsum erat. Suspendisse dignissim et sem at ultricies. Sed tempor turpis dolor, a accumsan odio lobortis ut. Praesent feugiat tristique tortor. Morbi molestie eu mauris sed fringilla. Morbi rutrum cursus lectus vel blandit. Integer pellentesque imperdiet ex, ac consectetur justo viverra vitae. Aliquam ipsum ante, posuere eget dignissim ut, gravida a lacus. Praesent nec tortor diam. Fusce cursus et lectus at ultricies. Morbi a diam sem. Pellentesque nec fringilla lacus. Morbi imperdiet ex vitae orci semper, ac sodales dui egestas. Proin feugiat semper eleifend. Phasellus vestibulum quis nisi eget semper. Donec et vestibulum leo, vel dictum sem. Nullam hendrerit libero nec mi auctor, in porta justo viverra. Duis vitae cursus sem. Etiam quis tempus lacus, in rhoncus sapien. Donec dapibus risus erat, tincidunt venenatis dui dignissim ac. Fusce quis ante facilisis, consequat elit et, luctus lectus. ",
-		"img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Cooper_Union_-_Cooper_Union_Academic_Building_%2848072701728%29.jpg/220px-Cooper_Union_-_Cooper_Union_Academic_Building_%2848072701728%29.jpg"
+		"img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Cooper_Union_-_Cooper_Union_Academic_Building_%2848072701728%29.jpg/220px-Cooper_Union_-_Cooper_Union_Academic_Building_%2848072701728%29.jpg",
+		"tags": ["Technology"]
 	},
 	{
-		"name": "Test project 2",
-		"desc": "Hello from 2",
-		"img": "https://www.invent.org/sites/default/files/styles/inductee_detail_media/public/inductees/258-master_0.jpg"
+		"name": "JengaBot",
+		"desc": " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget cursus ligula, non ornare velit. Integer tristique mauris ex, nec sodales dui porta venenatis. Fusce ac ipsum erat. Suspendisse dignissim et sem at ultricies. Sed tempor turpis dolor, a accumsan odio lobortis ut. Praesent feugiat tristique tortor. Morbi molestie eu mauris sed fringilla. Morbi rutrum cursus lectus vel blandit. Integer pellentesque imperdiet ex, ac consectetur justo viverra vitae. Aliquam ipsum ante, posuere eget dignissim ut, gravida a lacus. Praesent nec tortor diam. Fusce cursus et lectus at ultricies. Morbi a diam sem. Pellentesque nec fringilla lacus. Morbi imperdiet ex vitae orci semper, ac sodales dui egestas. Proin feugiat semper eleifend. Phasellus vestibulum quis nisi eget semper. Donec et vestibulum leo, vel dictum sem. Nullam hendrerit libero nec mi auctor, in porta justo viverra. Duis vitae cursus sem. Etiam quis tempus lacus, in rhoncus sapien. Donec dapibus risus erat, tincidunt venenatis dui dignissim ac. Fusce quis ante facilisis, consequat elit et, luctus lectus. ",
+		"img": "https://www.invent.org/sites/default/files/styles/inductee_detail_media/public/inductees/258-master_0.jpg",
+		"tags": ["Healthcare"]
+	},
+	{
+		"name": "Analysis of the Mag-Walking Method in Monte Carlo Algorithms",
+		"desc": " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget cursus ligula, non ornare velit. Integer tristique mauris ex, nec sodales dui porta venenatis. Fusce ac ipsum erat. Suspendisse dignissim et sem at ultricies. Sed tempor turpis dolor, a accumsan odio lobortis ut. Praesent feugiat tristique tortor. Morbi molestie eu mauris sed fringilla. Morbi rutrum cursus lectus vel blandit. Integer pellentesque imperdiet ex, ac consectetur justo viverra vitae. Aliquam ipsum ante, posuere eget dignissim ut, gravida a lacus. Praesent nec tortor diam. Fusce cursus et lectus at ultricies. Morbi a diam sem. Pellentesque nec fringilla lacus. Morbi imperdiet ex vitae orci semper, ac sodales dui egestas. Proin feugiat semper eleifend. Phasellus vestibulum quis nisi eget semper. Donec et vestibulum leo, vel dictum sem. Nullam hendrerit libero nec mi auctor, in porta justo viverra. Duis vitae cursus sem. Etiam quis tempus lacus, in rhoncus sapien. Donec dapibus risus erat, tincidunt venenatis dui dignissim ac. Fusce quis ante facilisis, consequat elit et, luctus lectus. ",
+		"img": "https://www.invent.org/sites/default/files/styles/inductee_detail_media/public/inductees/258-master_0.jpg",
+		"tags": ["Healthcare", "Senior Projects"]
 	}
 ]
