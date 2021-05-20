@@ -8,20 +8,20 @@
 			<div class="col-3 leftline">
 				<img src="/images/bg-assets-19.svg">
 			</div>
-			<div class="col-8">
+			<div class="col-7">
 				<h1>{{project.name}}</h1>
 			</div>
-			<div class="col-1"></div>
+			<div class="col-2"></div>
 		</div>
 		<div class="row">
 			<div class="col-3"></div>
 			<div class="col-4">
 				<p>{{project.desc}}</p>
 			</div>
-			<div class="col-4 media">
+			<div class="col-3 media">
 				<img :src='project.img'/>
 			</div>
-			<div class="col-1"></div>
+			<div class="col-2"></div>
 		</div>
 	</div>
 
@@ -67,12 +67,19 @@ export default defineComponent({
 	color: #c14e0e;
 }
 
+.container-fluid p{
+	text-align: justify;
+	text-justify: inter-word;
+	margin-top: 0px;
+}
+
 .leftline img{
 	padding-top: 40px;
 }
 
 .media img{
 	border: 2px solid #c14e0e;
+	width: inherit;
 }
 
 </style>
