@@ -91,6 +91,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
+
 *{
     margin: 0px;
     padding: 0px;
@@ -113,12 +114,12 @@ export default defineComponent({
     text-align: center;
     margin: 40px 60px 0px 0px;
     text-decoration: none;
-    border-bottom: 3px solid rgba(0,0,0,0);
+    border-bottom: 2px solid rgba(0,0,0,0);
     transition: border-bottom 0.5s;
 }
 
 .menu li a:hover{
-    border-bottom: 3px solid #c14e0e;
+    border-bottom: 2px solid #c14e0e;
 }
 
 .menu li a:visited{

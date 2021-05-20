@@ -77,7 +77,7 @@ export default defineComponent({
 }
 
 .menu li a:hover{
-    border-bottom: 3px solid #c14e0e;
+    border-bottom: 2px solid #c14e0e;
 }
 
 .menu li a:visited{
