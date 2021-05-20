@@ -3,27 +3,37 @@
     <website-header/>
 
     <!-- filters and sort controls -->
-    <div>
-        <div>
-            Filter by tags:
-            <div v-for="tag of tags"
-                 :key="tag.name"
-                 :class="{'selected-tag': tag.selected}"
-                 @click="tag.selected = !tag.selected">
-                {{tag.name}}
+    <div class="container-fluid nav-bar">
+        <div class="row">
+            <div class="col-6">
+                <h3><i>Filter by tags:</i></h3>
+            </div>
+            <div class="col-6">
+                <h3><i>Search projects:</i></h3>
             </div>
         </div>
-        <div>
-            Search projects:
-            <input type="text" placeholder="" v-model="search" />
+        <div class="row">
+            <div class="col-6">
+                <div class="tags" v-for="tag of tags"
+                    :key="tag.name"
+                    :class="{'selected-tag': tag.selected}"
+                    @click="tag.selected = !tag.selected">
+                    <p>{{tag.name}}</p>
+                </div>
+            </div>
+            <div class="col-6">
+            <div class="search">
+                <input type="text" placeholder="" v-model="search" />
+            </div>
+            </div>
         </div>
     </div>
 
-    <div v-if="projectsList.length === 0">
+    <div class="no-match" v-if="projectsList.length === 0">
         No projects matched the current search filters.
     </div>
 
-    <div v-for="(project, id) of projectsList" :key="project.name">
+    <div class="list" v-for="(project, id) of projectsList" :key="project.name">
         <router-link :to="'/projects/' + id"
             @mouseenter="currentProject = project"
             @mouseleave="currentProject = currentProject.name === project.name ? null : currentProject">
@@ -31,9 +41,9 @@
         </router-link>
     </div>
 
-    <div v-if="currentProject !== null" style="border:1px solid black;">
+    <div class="pop-up" v-if="currentProject !== null" >
         <h1>{{currentProject.name}}</h1>
-        <p>{{currentProject.desc}}</p>
+        <p>{{currentProject.abstract}}</p>
     </div>
 </template>
 
@@ -121,7 +131,80 @@
 </script>
 
 <style scoped>
-    .selected-tag {
-        background-color: lightslategray;
-    }
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav-bar{
+    padding: 20px 0px 0px 40px;
+    color: #c14e0e;
+    font-size: 20px;
+}
+
+.nav-bar h3{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.tags{
+    display: inline-block;
+}
+
+.tags p{
+    color: #c14e0e;
+    font-size: 20px;
+    padding: 6px;
+    margin: 0px 10px 20px 0px;
+    border: 1px solid #c14e0e;
+    border-radius: 5px;
+}
+
+.search{
+    display: inline-block;
+}
+
+.list{
+    width: 50vw;
+    padding: 20px 0px 0px 40px;
+}
+
+.list a{
+    text-decoration: none;
+    color: #c14e0e;
+    font-size: 20px;
+}
+
+.selected-tag p{
+    color: #eaded6;
+    background-color: #c14e0e;
+}
+
+.pop-up{
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    width: 40vw;
+    margin: 0px 20px 20px 0px;
+    color: #c14e0e;
+    background-color: #eaded6;
+    border: 2px solid #c14e0e;
+}
+
+.pop-up h1{
+    font-size: 20px;
+    padding: 20px 20px 0px 20px;
+}
+
+.pop-up p{
+    padding: 20px;
+}
+
+.no-match{
+    color: #c14e0e;
+    padding: 20px 0px 0px 40px;
+    font-size: 32px;
+}
+
 </style>
