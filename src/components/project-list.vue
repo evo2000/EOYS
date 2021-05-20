@@ -18,6 +18,10 @@
         </div>
     </div>
 
+    <div v-if="projectsList.length === 0">
+        No projects matched the current search filters.
+    </div>
+
     <div v-for="(project, id) of projectsList" :key="project.name">
         <router-link :to="'/projects/' + id">
             {{project.name}}
@@ -93,16 +97,10 @@
           const searchString = (project.name + project.authors + project.desc)
               .toLowerCase();
           if (this.searchQueries.length) {
-            let queryFound = false;
             for (let query of this.searchQueries) {
-              if (searchString.indexOf(query) >= 0) {
-                queryFound = true;
-                break;
+              if (searchString.indexOf(query) === -1) {
+                return false;
               }
-            }
-
-            if (!queryFound) {
-              return false;
             }
           }
 
