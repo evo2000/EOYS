@@ -6,10 +6,11 @@
     <div>
         <div>
             Filter by tags:
-            <div v-for="tag of tags" :key="tag.name">
-                <label :for="'option-' + tag.name">{{tag.name}}</label>
-                <input :id="'option-' + tag.name" type="checkbox"
-                       v-model="tag.selected" />
+            <div v-for="tag of tags"
+                 :key="tag.name"
+                 :class="{'selected-tag': tag.selected}"
+                 @click="tag.selected = !tag.selected">
+                {{tag.name}}
             </div>
         </div>
         <div>
@@ -23,9 +24,16 @@
     </div>
 
     <div v-for="(project, id) of projectsList" :key="project.name">
-        <router-link :to="'/projects/' + id">
+        <router-link :to="'/projects/' + id"
+            @mouseenter="currentProject = project"
+            @mouseleave="currentProject = currentProject.name === project.name ? null : currentProject">
             {{project.name}}
         </router-link>
+    </div>
+
+    <div v-if="currentProject !== null" style="border:1px solid black;">
+        <h1>{{currentProject.name}}</h1>
+        <p>{{currentProject.desc}}</p>
     </div>
 </template>
 
@@ -45,7 +53,8 @@
       return {
         projects: [],
         tags: [],
-        search: ''
+        search: '',
+        currentProject: null
       };
     },
 
@@ -111,4 +120,8 @@
   })
 </script>
 
-<style scoped></style>
+<style scoped>
+    .selected-tag {
+        background-color: lightslategray;
+    }
+</style>
