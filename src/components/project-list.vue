@@ -1,7 +1,4 @@
 <template>
-    <link href="../bootstrap-grid.css" rel="stylesheet">
-    <website-header/>
-
     <!-- filters and sort controls -->
     <div class="container-fluid nav-bar">
         <div class="row">
