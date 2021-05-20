@@ -1,6 +1,4 @@
 <template>
-
-	<website-header/>
 	
 	<div class="container-fluid">
 		<div class="row">
@@ -34,7 +32,6 @@
 </template>
 
 <script>
-import WebsiteHeader from './website-header.vue';
 import bg from './bg.vue';
 import {defineComponent} from 'vue';
 
@@ -42,7 +39,6 @@ export default defineComponent({
 	name: 'About',
 
 	components: {
-        WebsiteHeader,
         bg
 	},
 

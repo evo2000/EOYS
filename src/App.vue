@@ -7,10 +7,8 @@
 <script>
   import {defineComponent} from 'vue';
   import WebsiteHeader from './components/website-header.vue';
-
   export default defineComponent({
     name: 'App',
-
     components: {
       WebsiteHeader
     },

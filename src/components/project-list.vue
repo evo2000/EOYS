@@ -47,7 +47,6 @@
 
 <script>
   import projectsJson from '../projects.json';
-  import WebsiteHeader from './website-header.vue';
   import bg from './bg.vue';
   import {defineComponent} from 'vue';
 
@@ -55,7 +54,6 @@
     name: 'ProjectList',
 
     components: {
-      WebsiteHeader,
       bg
     },
 

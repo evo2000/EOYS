@@ -1,23 +1,13 @@
 <template>
 
   <div class="main-contain">
-        
-    <div class="menu">
-      <ul>
-        <li><router-link to="/about">ABOUT</router-link></li>
-        <li><router-link to="/projects">PROJECTS</router-link></li>
-      </ul>
-    </div>
-            
     <div class="logo">
       <img src="/images/logo-splash.svg">
-    </div>
-            
+    </div>    
     <div class="curve">
       <img src="/images/bg-assets-20.svg">
     </div>
-
-</div>
+  </div>
 
 <bg/>
 

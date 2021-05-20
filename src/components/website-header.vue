@@ -86,7 +86,7 @@
     .menu li a {
         display: block;
         color: #c14e0e;
-        font-size: 18px;
+        font-size: 14px;
         font-family: serif;
         text-align: center;
         margin: 40px 60px 0px 0px;
