@@ -5,7 +5,7 @@
             <div class="menu">
                 <ul>
                     <li><a href="#">ABOUT</a></li>
-                    <li class="act"><a href="#">PROJECTS</a></li>
+                    <li><a href="#">PROJECTS</a></li>
                 </ul>
                 <img src="/images/logo.svg">
             </div>
@@ -67,10 +67,10 @@ export default defineComponent({
 .menu li a{
     display: block;
     color: #c14e0e;
-    font-size: 18px;
+    font-size: 14px;
     font-family: serif;
     text-align: center;
-    margin: 40px 60px 0px 0px;
+    margin: 40px 40px 0px 0px;
     text-decoration: none;
     border-bottom: 2px solid rgba(0,0,0,0);
     transition: border-bottom 0.5s;

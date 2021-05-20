@@ -25,13 +25,12 @@
 		</div>
 	</div>
 
-<bg/>
+	<bg/>
 
 </template>
 
 <script>
 import projectsJson from '../projects.json';
-// import HelloWorld from './HelloWorld.vue';
 import WebsiteHeader from './website-header.vue';
 import bg from './bg.vue';
 import {defineComponent} from 'vue';
