@@ -24,10 +24,6 @@ export default defineComponent({
 	},
 
 	created() {
-		this.projects = projectsJson;
-
-        // TODO: use this to highlight "projects" or "about"
-        // console.log(this.$route.path);
 	},
 })
 </script>
