@@ -25,19 +25,23 @@
 		</div>
 	</div>
 
+<bg/>
+
 </template>
 
 <script>
 import projectsJson from '../projects.json';
 // import HelloWorld from './HelloWorld.vue';
 import WebsiteHeader from './website-header.vue';
+import bg from './bg.vue';
 import {defineComponent} from 'vue';
 
 export default defineComponent({
 	name: 'project',
 
 	components: {
-		WebsiteHeader
+		WebsiteHeader,
+		bg
 	},
 
 	data() {
