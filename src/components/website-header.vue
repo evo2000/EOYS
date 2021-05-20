@@ -17,10 +17,11 @@
             </router-link>
         </div>
 
-        <!-- curve (if not splash) -->
+        <!-- curve (if not splash)
         <div class="curve" v-if="currentPage !== 'splash'">
             <img src="/images/bg-assets-22.svg">
         </div>
+        -->
     </div>
 </template>
 
@@ -64,56 +65,55 @@
 
 <style scoped>
 
-    * {
-        margin: 0px;
-        padding: 0px;
-    }
+* {
+    margin: 0px;
+    padding: 0px;
+}
 
-    .menu ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
+.menu{
+}
 
-    .act a {
-        font-weight: bold;
-    }
+.menu ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
 
-    .menu li {
-        float: right;
-    }
+.menu li {
+    float: right;
+}
 
-    .menu li a {
-        display: block;
-        color: #c14e0e;
-        font-size: 14px;
-        font-family: serif;
-        text-align: center;
-        margin: 40px 60px 0px 0px;
-        text-decoration: none;
-        border-bottom: 2px solid rgba(0, 0, 0, 0);
-        transition: border-bottom 0.5s;
-    }
+.menu li a {
+    display: block;
+    color: #c14e0e;
+    font-size: 14px;
+    font-family: serif;
+    text-align: center;
+    margin: 40px 60px 0px 0px;
+    text-decoration: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    transition: border-bottom 0.5s;
+}
 
-    .menu li a:hover {
-        border-bottom: 3px solid #c14e0e;
-    }
+.menu li a:hover {
+    border-bottom: 2px solid #c14e0e;
+}
 
-    .menu li a:visited {
-        color: #c14e0e;
-    }
+.menu li a:visited {
+    color: #c14e0e;
+}
 
-    .menu img {
-        height: 60px;
-        padding: 20px 0px 0px 20px;
-    }
+.menu img {
+    height: 60px;
+    padding: 20px 0px 0px 40px;
+}
 
-    .curve img {
-        position: absolute;
-        right: 0px;
-        top: 0px;
-        height: 80vh;
-        z-index: -1;
-    }
+.curve img {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 80vh;
+    z-index: -1;
+}
 
 </style>
