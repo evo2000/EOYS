@@ -1,8 +1,6 @@
 <template>
 
-    <div class="main-contain">
-        <h1>test</h1>
-    </div>
+    <h1>about</h1>
 
 </template>
 
@@ -12,7 +10,7 @@
 import {defineComponent} from 'vue';
 
 export default defineComponent({
-	name: 'about',
+	name: 'About',
 
 	components: {
         //WebsiteHeader,
@@ -35,10 +33,5 @@ export default defineComponent({
 </script>
 
 <style scoped>
-
-*{
-    margin: 0px;
-    padding: 0px;
-}
 
 </style>
