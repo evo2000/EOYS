@@ -1,54 +1,11 @@
 <template>
-  <!--
-  <ul>
-    <li v-for='(project, id) in projects' :key='project.name'>
-      <router-link :to='"/projects/" + id'>
-        {{project.name}}
-      </router-link>
-    </li>
-  </ul>
-  -->
-
-<!--
-[
-  {
-    "category": "technology",
-    "projects": [
-      {
-        "project": "admsad",
-        "autho
-      }
-    ]
-  },
-  {
-    "category": 
-  }
-]
-
-[
-  {
-    "project": "hello",
-    "authors": "asdmsad",
-    "category": "adlsad",
-    "tags": ["amsdsmd", "dsadm"]
-  }
-]
-
-<div v-for="category in categories">
-
-  <h1>{{category.name}}</h1>
-
-  <div v-for="project in category.projects">
-    {{project.title}}
-  </div>
-</div>-->
 
   <div class="main-contain">
         
     <div class="menu">
       <ul>
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">PROJECTS</a></li>
+        <li><router-link to="/about">ABOUT</router-link></li>
+        <li><router-link to="/projects">PROJECTS</router-link></li>
       </ul>
     </div>
             

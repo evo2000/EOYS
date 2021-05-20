@@ -45,18 +45,21 @@
         <h1>{{currentProject.name}}</h1>
         <p>{{currentProject.abstract}}</p>
     </div>
+<bg/>
 </template>
 
 <script>
   import projectsJson from '../projects.json';
   import WebsiteHeader from './website-header.vue';
+  import bg from './bg.vue';
   import {defineComponent} from 'vue';
 
   export default defineComponent({
     name: 'ProjectList',
 
     components: {
-      WebsiteHeader
+      WebsiteHeader,
+      bg
     },
 
     data() {
