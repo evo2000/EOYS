@@ -53,26 +53,29 @@
     </div>
             
     <div class="logo">
-      <!--<img src="/images/ENG EOYS 2021_logo main.svg">-->
       <img src="/images/logo-splash.svg">
     </div>
             
     <div class="curve">
       <img src="/images/bg-assets-20.svg">
     </div>
-            
-    </div>
+
+</div>
+
+<bg/>
 
 </template>
 
 <script>
 import projectsJson from '../projects.json';
+import bg from './bg.vue';
 import {defineComponent} from 'vue';
 
 export default defineComponent({
 	name: 'HelloWorld',
 
 	components: {
+    bg
 	},
 
 	data() {
