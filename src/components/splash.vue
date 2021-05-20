@@ -1,12 +1,12 @@
 <template>
   <div class="main-contain">
 
-    <div class="menu">
-      <ul>
-        <li><a href="#">ABOUT</a></li>
-        <li><router-link to="/projects">PROJECTS</router-link></li>
-      </ul>
-    </div>
+<!--    <div class="menu">-->
+<!--      <ul>-->
+<!--        <li><a href="#">ABOUT</a></li>-->
+<!--        <li><router-link to="/projects">PROJECTS</router-link></li>-->
+<!--      </ul>-->
+<!--    </div>-->
 
     <div class="logo">
       <img src="/images/logo-splash.svg">

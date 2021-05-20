@@ -1,8 +1,4 @@
 <template>
-
-	<link href="../bootstrap-grid.css" rel="stylesheet">
-	<website-header/>
-
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-3 leftline">
