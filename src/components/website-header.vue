@@ -94,6 +94,10 @@
     transition: border-bottom 0.5s;
 }
 
+.act a {
+    font-weight: bold;
+}
+
 .menu li a:hover {
     border-bottom: 2px solid #c14e0e;
 }
