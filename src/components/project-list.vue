@@ -201,7 +201,7 @@
     right: 0;
     position: fixed;
     width: 40vw;
-    margin: 0px 20px 20px 0px;
+    margin: 0px 40px 40px 0px;
     color: #c14e0e;
     background-color: #eaded6;
     border: 2px solid #c14e0e;
@@ -217,6 +217,7 @@
 .pop-up p{
     padding: 20px;
     font-family: 'Libre Baskerville', serif;
+    font-size: 14px;
 }
 
 .no-match{
@@ -230,7 +231,7 @@
     position: absolute;
     right: 0px;
     top: 0px;
-    height: 100vh;
+    height: 200vh;
     z-index: -1;
 }
 

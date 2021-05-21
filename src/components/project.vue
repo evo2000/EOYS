@@ -16,7 +16,9 @@
 				<p>{{project.desc}}</p>
 			</div>
 			<div class="col-3 media">
-				<img :src='project.img'/>
+				<a :href='project.img' data-lightbox="img">
+					<img :src='project.img'/>
+				</a>
 			</div>
 			<div class="col-2"></div>
 		</div>
@@ -90,7 +92,7 @@ export default defineComponent({
 
 .media img{
 	border: 2px solid #c14e0e;
-	width: inherit;
+	width: 100%;
 	margin: 40px 0px 0px 0px;
 }
 
