@@ -71,12 +71,12 @@
 }
 
 .menu{
+    width: 100vw;
+    display: inline-block;
 }
 
 .menu ul {
     list-style-type: none;
-    margin: 0px;
-    padding: 0px;
 }
 
 .menu li {
