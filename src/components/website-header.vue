@@ -85,11 +85,10 @@
 
 .menu li a {
     display: block;
+    font-family: 'Libre Baskerville', serif;
     color: #c14e0e;
     font-size: 14px;
-    font-family: serif;
-    text-align: center;
-    margin: 40px 60px 0px 0px;
+    margin: 30px 60px 0px 0px;
     text-decoration: none;
     border-bottom: 2px solid rgba(0, 0, 0, 0);
     transition: border-bottom 0.5s;

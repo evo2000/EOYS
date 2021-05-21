@@ -70,7 +70,14 @@ export default defineComponent({
 }
 
 .container-fluid h1{
-	padding-top: 40px;
+	padding: 40px 0px 0px 0px;
+	font-family: 'DM Serif Text', serif;
+}
+
+.container-fluid p{
+	margin: 20px 0px 0px 0px;
+	font-family: 'Libre Baskerville', serif;
+	font-size: 14px;
 }
 
 .container-fluid img{
@@ -80,7 +87,7 @@ export default defineComponent({
 
 .leftline img{
 	width: inherit;
-	padding: 56px 10px 0px 10px;
+	padding: 64px 10px 0px 10px;
 }
 
 .curve1 img{

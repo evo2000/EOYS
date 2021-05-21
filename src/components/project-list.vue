@@ -19,8 +19,8 @@
                 </div>
             </div>
             <div class="col-6">
-            <div class="search">
-                <input type="text" placeholder="" v-model="search" />
+            <div class="search-contain">
+                <input class="search" type="text" placeholder="" v-model="search" />
             </div>
             </div>
         </div>
@@ -146,7 +146,9 @@
 }
 
 .nav-bar h3{
-    font-size: 20px;
+    font-size: 14px;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: normal;
     padding-bottom: 20px;
 }
 
@@ -161,10 +163,19 @@
     margin: 0px 10px 20px 0px;
     border: 1px solid #c14e0e;
     border-radius: 5px;
+    font-family: 'Libre Baskerville', serif;
 }
 
 .search{
     display: inline-block;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 14px;
+    border: 1px solid #c14e0e;
+    border-radius: 5px;
+    padding: 6px;
+    outline: 0px;
+    background-color: #eaded6;
+    color: #c14e0e;
 }
 
 .list{
@@ -173,9 +184,11 @@
 }
 
 .list a{
+    font-family: 'DM Serif Text', serif;
+    font-weight: normal;
     text-decoration: none;
     color: #c14e0e;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .selected-tag p{
@@ -196,14 +209,18 @@
 
 .pop-up h1{
     font-size: 20px;
+    font-weight: normal;
+    font-family: 'DM Serif Text', serif;
     padding: 20px 20px 0px 20px;
 }
 
 .pop-up p{
     padding: 20px;
+    font-family: 'Libre Baskerville', serif;
 }
 
 .no-match{
+    font-family: 'DM Serif Text', serif;
     color: #c14e0e;
     padding: 20px 0px 0px 40px;
     font-size: 32px;

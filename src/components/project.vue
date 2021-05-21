@@ -57,36 +57,41 @@ export default defineComponent({
 
 <style scoped>
 
-@font-face {
-  font-family: bigcaslon;
-  src: url('/fonts/BigCaslon.ttf') format('ttf');
-}
-@font-face {
-  font-family: bodoni;
-  src: url('/fonts/Bodoni 72.ttc');
+*{
+	margin: 0px;
+	padding: 0px;
 }
 
 .container-fluid{
 	color: #c14e0e;
+	margin: 0px 0px 80px 0px;
+}
+
+.container-fluid h1{
+	font-family: 'DM Serif Text', serif;
+	font-weight: normal;
+	margin: 40px 0px 0px 0px;
 }
 
 .container-fluid p{
-	font-family: "bodoni"; 
-	style:normal;
+	font-family: 'Libre Baskerville', serif;
+	font-size: 14px;
 	weight:400;
 	stretch:100;
 	text-align: justify;
 	text-justify: inter-word;
-	margin-top: 0px;
+	margin: 40px 40px 0px 0px;
 }
 
 .leftline img{
-	padding-top: 40px;
+	width: inherit;
+	padding: 60px 20px 0px 0px;
 }
 
 .media img{
 	border: 2px solid #c14e0e;
 	width: inherit;
+	margin: 40px 0px 0px 0px;
 }
 
 </style>
