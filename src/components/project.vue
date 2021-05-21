@@ -106,17 +106,17 @@ export default defineComponent({
 .curve1 img{
 	margin: 0px;
 	padding: 0px;
-    position: absolute;
+    position: fixed;
     right: 0px;
     top: 0px;
-    height: 100vh;
+    height: 120vh;
     z-index: -1;
 }
 
 .curve2 img{
 	margin: 0px;
 	padding: 0px;
-    position: absolute;
+    position: fixed;
     left: 0px;
     bottom: 0px;
     height: 60vh;

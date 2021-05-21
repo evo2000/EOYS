@@ -31,15 +31,20 @@
     </div>
 
     <div class="list" v-for="(project, id) of projectsList" :key="project.name">
-        <router-link :to="'/projects/' + id"
+        <router-link class="name" :to="'/projects/' + id"
             @mouseenter="currentProject = project"
             @mouseleave="currentProject = currentProject.name === project.name ? null : currentProject">
-            {{project.name}}
+            <p>{{project.name}}</p>
+        </router-link>
+        <router-link class="title" :to="'/projects/' + id"
+            @mouseenter="currentProject = project"
+            @mouseleave="currentProject = currentProject.title === project.title ? null : currentProject">
+            <p>{{project.title}}</p>
         </router-link>
     </div>
 
     <div class="pop-up" v-if="currentProject !== null" >
-        <h1>{{currentProject.name}}</h1>
+        <h1>{{currentProject.title}}</h1>
         <p>{{currentProject.abstract}}</p>
     </div>
     <div class="curve">
@@ -141,7 +146,7 @@
 }
 
 .nav-bar{
-    padding: 20px 0px 0px 40px;
+    padding: 70px 0px 30px 40px;
     color: #c14e0e;
     font-size: 20px;
 }
@@ -165,10 +170,16 @@
     border: 1px solid #c14e0e;
     border-radius: 5px;
     font-family: 'Libre Baskerville', serif;
+    cursor: pointer;
+}
+
+.selected-tag p{
+    color: #eaded6;
+    background-color: #c14e0e;
 }
 
 .search{
-    display: inline-block;
+    display: relative;
     font-family: 'Libre Baskerville', serif;
     font-size: 14px;
     border: 1px solid #c14e0e;
@@ -180,8 +191,8 @@
 }
 
 .list{
-    width: 70vw;
-    padding: 20px 0px 0px 40px;
+    width: 50vw;
+    padding: 30px 0px 0px 40px;
 }
 
 .list a{
@@ -189,12 +200,17 @@
     font-weight: normal;
     text-decoration: none;
     color: #c14e0e;
-    font-size: 24px;
+    font-size: 20px;
+    display: inline;
 }
 
-.selected-tag p{
-    color: #eaded6;
-    background-color: #c14e0e;
+.name p{
+    display: inline;
+}
+
+.title p{
+    font-style: italic;
+    display: inline;
 }
 
 .pop-up{

@@ -92,7 +92,7 @@ export default defineComponent({
 }
 
 .curve1 img{
-    position: absolute;
+    position: fixed;
     right: 0px;
     top: 0px;
     height: 50vh;
@@ -100,7 +100,7 @@ export default defineComponent({
 }
 
 .curve2 img{
-    position: absolute;
+    position: fixed;
     left: 0px;
     bottom: 0px;
     height: 60vh;
