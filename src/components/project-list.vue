@@ -43,7 +43,7 @@
         <p>{{currentProject.abstract}}</p>
     </div>
     <div class="curve">
-        <img src="/images/bg-assets-24.svg">
+        <img src="/images/PROJECT.svg">
     </div>
 
 <bg/>
@@ -137,6 +137,7 @@
 *{
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 }
 
 .nav-bar{
@@ -179,7 +180,7 @@
 }
 
 .list{
-    width: 50vw;
+    width: 70vw;
     padding: 20px 0px 0px 40px;
 }
 
@@ -231,7 +232,7 @@
     position: absolute;
     right: 0px;
     top: 0px;
-    height: 200vh;
+    height: 100vh;
     z-index: -1;
 }
 

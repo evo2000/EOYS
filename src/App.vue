@@ -16,18 +16,9 @@
 </script>
 
 <style>
-  @font-face {
-    font-family: bigcaslon;
-    src: url('/fonts/bigcaslon.otf');
-  }
 
-  @font-face {
-    font-family: bodoni;
-    src: url('/fonts/bodoni72.ttc');
-  }
-
-  * {
-    /*font-family: bigcaslon, serif;*/
-    /*font-family: bodoni, serif;*/
-  }
+*{
+    margin: 0px;
+    padding: 0px;
+}
 </style>

@@ -24,6 +24,13 @@
 		</div>
 	</div>
 
+	<div class="curve1">
+		<img src="/images/STUDENT_PROJECT.svg">
+	</div>
+	<div class="curve2">
+        <img src="/images/ABOUT-bottom.svg">
+    </div>
+
 	<bg/>
 
 </template>
@@ -94,6 +101,26 @@ export default defineComponent({
 	border: 2px solid #c14e0e;
 	width: 100%;
 	margin: 40px 0px 0px 0px;
+}
+
+.curve1 img{
+	margin: 0px;
+	padding: 0px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 100vh;
+    z-index: -1;
+}
+
+.curve2 img{
+	margin: 0px;
+	padding: 0px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    height: 60vh;
+    z-index: -1;
 }
 
 </style>

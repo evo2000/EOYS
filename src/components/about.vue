@@ -3,7 +3,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-3"></div>
-			<div class="col-7">
+			<div class="col-6">
 				<h1>Message from The Dean</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a molestie orci. Vestibulum ut tincidunt nisl, ac dignissim elit. Maecenas non nibh molestie, vehicula est et, pretium orci. Aliquam erat volutpat. Sed dictum lorem sed ligula fringilla dapibus. Donec sit amet metus ipsum. Suspendisse tempor malesuada eros in tincidunt. Praesent eleifend mollis tellus non tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus venenatis neque id lorem elementum, nec gravida libero facilisis. Nam nec nibh sodales, euismod lectus in, pharetra metus. Maecenas dignissim vulputate nisi. Suspendisse potenti. Morbi maximus turpis eget tortor semper sollicitudin. Curabitur tincidunt erat at interdum volutpat. Pellentesque commodo dui sem, quis maximus nibh ornare lacinia.</p>
 			</div>
@@ -19,7 +19,7 @@
 			<div class="col-3 leftline">
 				<img src="/images/bg-assets-19.svg">
 			</div>
-			<div class="col-7">
+			<div class="col-6">
 				<h1>The Graphics Team</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a molestie orci. Vestibulum ut tincidunt nisl, ac dignissim elit. Maecenas non nibh molestie, vehicula est et, pretium orci. Aliquam erat volutpat. Sed dictum lorem sed ligula fringilla dapibus. Donec sit amet metus ipsum. Suspendisse tempor malesuada eros in tincidunt. Praesent eleifend mollis tellus non tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus venenatis neque id lorem elementum, nec gravida libero facilisis. Nam nec nibh sodales, euismod lectus in, pharetra metus. Maecenas dignissim vulputate nisi. Suspendisse potenti. Morbi maximus turpis eget tortor semper sollicitudin. Curabitur tincidunt erat at interdum volutpat. Pellentesque commodo dui sem, quis maximus nibh ornare lacinia.</p>
 			</div>
@@ -27,10 +27,10 @@
 		</div>
 	</div>
 	<div class="curve1">
-        <img src="/images/bg-assets-22.svg">
+        <img src="/images/ABOUT-top.svg">
     </div>
 	<div class="curve2">
-        <img src="/images/bg-assets-24.svg">
+        <img src="/images/ABOUT-bottom.svg">
     </div>
 	<bg/>
 
@@ -94,7 +94,7 @@ export default defineComponent({
     position: absolute;
     right: 0px;
     top: 0px;
-    width: 40vw;
+    height: 50vh;
     z-index: -1;
 }
 
@@ -102,7 +102,7 @@ export default defineComponent({
     position: absolute;
     left: 0px;
     bottom: 0px;
-    height: 100vh;
+    height: 60vh;
     z-index: -1;
 }
 
