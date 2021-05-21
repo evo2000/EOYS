@@ -55,7 +55,7 @@ export default defineComponent({
     position: absolute;
     right: 0px;
     bottom: 0px;
-    /height: 80vh;
+    height: 80vh;
     z-index: -1;
 }
 </style>
