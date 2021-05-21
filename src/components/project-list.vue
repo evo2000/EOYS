@@ -42,6 +42,10 @@
         <h1>{{currentProject.name}}</h1>
         <p>{{currentProject.abstract}}</p>
     </div>
+    <div class="curve">
+        <img src="/images/bg-assets-24.svg">
+    </div>
+
 <bg/>
 </template>
 
@@ -152,7 +156,7 @@
 
 .tags p{
     color: #c14e0e;
-    font-size: 20px;
+    font-size: 14px;
     padding: 6px;
     margin: 0px 10px 20px 0px;
     border: 1px solid #c14e0e;
@@ -203,6 +207,14 @@
     color: #c14e0e;
     padding: 20px 0px 0px 40px;
     font-size: 32px;
+}
+
+.curve img{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 100vh;
+    z-index: -1;
 }
 
 </style>

@@ -57,11 +57,24 @@ export default defineComponent({
 
 <style scoped>
 
+@font-face {
+  font-family: bigcaslon;
+  src: url('/fonts/BigCaslon.ttf') format('ttf');
+}
+@font-face {
+  font-family: bodoni;
+  src: url('/fonts/Bodoni 72.ttc');
+}
+
 .container-fluid{
 	color: #c14e0e;
 }
 
 .container-fluid p{
+	font-family: "bodoni"; 
+	style:normal;
+	weight:400;
+	stretch:100;
 	text-align: justify;
 	text-justify: inter-word;
 	margin-top: 0px;

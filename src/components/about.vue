@@ -26,7 +26,12 @@
 			<div class="col-2"></div>
 		</div>
 	</div>
-
+	<div class="curve1">
+        <img src="/images/bg-assets-22.svg">
+    </div>
+	<div class="curve2">
+        <img src="/images/bg-assets-24.svg">
+    </div>
 	<bg/>
 
 </template>
@@ -76,6 +81,22 @@ export default defineComponent({
 .leftline img{
 	width: inherit;
 	padding: 56px 10px 0px 10px;
+}
+
+.curve1 img{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 40vw;
+    z-index: -1;
+}
+
+.curve2 img{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    height: 100vh;
+    z-index: -1;
 }
 
 </style>
