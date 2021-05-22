@@ -1,5 +1,8 @@
 <template>
-  <link href="../bootstrap-grid.css" rel="stylesheet">
+
+    <!-- switching to regular bootstrap -->
+<!--  <link href="../bootstrap-grid.css" rel="stylesheet">-->
+
   <website-header/>
   <router-view />
 </template>
