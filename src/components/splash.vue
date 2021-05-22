@@ -11,8 +11,6 @@
     </div>
     <img class="curve" src="/images/HOME.svg">
 
-    <bg/>
-
 </template>
 
 <script>

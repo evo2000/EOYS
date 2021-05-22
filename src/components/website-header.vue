@@ -14,10 +14,10 @@
             <!-- nav links -->
             <nav class="col-12 col-md-6 d-flex flex-row justify-content-center justify-content-md-end">
                 <div :class="{act: currentPage === 'projects'}">
-                    <router-link class="d-block p-3" to="/projects">PROJECTS</router-link>
+                    <router-link class="d-block p-3" to="/projects">Projects</router-link>
                 </div>
                 <div :class="{act: currentPage === 'about'}">
-                    <router-link class="d-block p-3" to="/about">ABOUT</router-link>
+                    <router-link class="d-block p-3" to="/about">About</router-link>
                 </div>
             </nav>
         </div>
@@ -30,30 +30,9 @@
   export default defineComponent({
     name: 'website-header',
 
-    components: {},
-
-    computed: {
-
-      // will return one of ['splash', 'projects', 'about', 'other']
-      currentPage() {
-        // get route components, switch on first route component
-        // should be a flexible-enough system
-        const currentPath = this.$route.path
-          .toLowerCase()
-          .split('/')
-          .filter(component => component.length);
-
-        if (!currentPath.length) {
-          return 'splash';
-        } else if (currentPath[0] === 'about') {
-          return 'about';
-        } else if (currentPath[0] === 'projects') {
-          return 'projects';
-        } else {
-          return 'other';
-        }
-      }
-    }
+    props: {
+      currentPage: String,
+    },
   })
 </script>
 
