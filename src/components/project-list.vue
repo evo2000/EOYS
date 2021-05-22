@@ -34,12 +34,7 @@
         <router-link class="name" :to="'/projects/' + id"
             @mouseenter="currentProject = project"
             @mouseleave="currentProject = currentProject.name === project.name ? null : currentProject">
-            <p>{{project.name}}</p>
-        </router-link>
-        <router-link class="title" :to="'/projects/' + id"
-            @mouseenter="currentProject = project"
-            @mouseleave="currentProject = currentProject.title === project.title ? null : currentProject">
-            <p>{{project.title}}</p>
+            {{project.name}}<i>{{project.title}}</i>
         </router-link>
     </div>
 
@@ -201,15 +196,6 @@
     text-decoration: none;
     color: #c14e0e;
     font-size: 20px;
-    display: inline;
-}
-
-.name p{
-    display: inline;
-}
-
-.title p{
-    font-style: italic;
     display: inline;
 }
 
