@@ -29,13 +29,11 @@
 	</div>
 
     <!-- background graphics -->
-	<div class="curve1">
-        <img src="/images/ABOUT-top.svg">
-    </div>
-	<div class="curve2">
-        <img src="/images/ABOUT-bottom.svg">
-    </div>
-	<bg/>
+	<img class="curve1 d-none d-md-block" src="/images/ABOUT-top.svg">
+	<img class="curve2 d-none d-md-block" src="/images/ABOUT-bottom.svg">
+
+	<!-- don't need this anymore -->
+<!--	<bg/>-->
 
 </template>
 
@@ -107,20 +105,20 @@ export default defineComponent({
 /*	width: 180px;*/
 /*}*/
 
-.curve1 img{
-    position: fixed;
-    right: 0px;
-    top: 0px;
-    width: 36vw;
-    z-index: -1;
-}
+	.curve1 {
+		position: fixed;
+		right: 0px;
+		top: 0px;
+		width: 36vw;
+		z-index: -1;
+	}
 
-.curve2 img{
-    position: fixed;
-    left: 0px;
-    bottom: 0px;
-    width: 26vw;
-    z-index: -1;
-}
+	.curve2 {
+		position: fixed;
+		left: 0px;
+		bottom: 0px;
+		width: 26vw;
+		z-index: -1;
+	}
 
 </style>

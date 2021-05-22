@@ -22,6 +22,15 @@
     body {
         /* need !important to override bootstrap default */
         background-color: #eaded6 !important;
+        color: #c14e0e !important;
+
+        /* default font for text */
+        font-family: "Libre Baskerville", serif !important;
+    }
+
+    /* header font */
+    h1, h2, h3, h4, h5, h6 {
+
     }
 
 /** {*/

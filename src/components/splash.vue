@@ -16,23 +16,10 @@
 </template>
 
 <script>
-import projectsJson from '../projects.json';
-import bg from './bg.vue';
 import {defineComponent} from 'vue';
 
 export default defineComponent({
 	name: 'Splash',
-
-	components: {
-      bg
-	},
-
-	data() {
-	},
-
-	created() {
-		this.projects = projectsJson;
-	},
 })
 </script>
 

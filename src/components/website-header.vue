@@ -32,11 +32,6 @@
 
     components: {},
 
-    created() {
-      // TODO: use this to highlight "projects" or "about"
-      // console.log(this.$route.path);
-    },
-
     computed: {
 
       // will return one of ['splash', 'projects', 'about', 'other']
@@ -69,8 +64,8 @@
     }
 
     nav a {
-        font-family: "Libre Baskerville", serif;
-        color: #c14e0e !important;
+        font-family: inherit;
+        color: inherit;
         text-decoration: none;
     }
 
