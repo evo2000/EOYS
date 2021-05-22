@@ -28,9 +28,20 @@
         font-family: "Libre Baskerville", serif !important;
     }
 
+    a {
+        font-family: inherit !important;
+        color: inherit !important;
+    }
+
     /* header font */
     h1, h2, h3, h4, h5, h6 {
+        font-family: 'DM Serif Text', serif;
+    }
 
+    @media (min-width: 1200px) {
+        .container {
+            width: 768px !important;
+        }
     }
 
 /** {*/

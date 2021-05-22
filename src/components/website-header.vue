@@ -1,6 +1,6 @@
 <template>
 <!--    <div class="main-contain">-->
-    <div class="container-fluid">
+    <div class="container-fluid mb-5">
         <div class="menu row">
             <!-- navbar logo (hide if splash page) -->
             <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-start">

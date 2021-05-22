@@ -1,25 +1,36 @@
 <template>
 
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-3"></div>
-			<div class="col-7">
-				<h1>{{project.name}}<i>{{project.title}}</i></h1>
+<!--	<div class="container-fluid">-->
+	<div class="container">
+        <!-- project title -->
+		<h3><em>{{project.title}}</em></h3>
+		<h5>{{project.authors}}</h5>
+		<p>
+			Tagged:
+			<router-link v-for="tag of project.tags"
+                         class="d-inline-block pr-2"
+						 :to="'/projects?tags=' + tag">
+				{{tag}}
+			</router-link>
+		</p>
+
+        <!-- project abstract and images -->
+        <div class="row">
+			<div class="pt-3 col-12 col-md-7">
+				<h5>Abstract</h5>
+				<p>{{project.abstract}}</p>
 			</div>
-			<div class="col-2"></div>
+			<div class="pt-3 col-12 col-md-5 pl-md-4">
+				<img class="project-image w-100" :src='project.img'/>
+			</div>
 		</div>
-		<div class="row">
-			<div class="col-3"></div>
-			<div class="col-4">
-				<p>{{project.desc}}</p>
-			</div>
-			<div class="col-3 media">
-				<a :href='project.img' data-lightbox="img">
-					<img :src='project.img'/>
-				</a>
-			</div>
-			<div class="col-2"></div>
-		</div>
+
+		<h5 class="pt-4">Full Description</h5>
+		<p>{{project.desc}}</p>
+
+		<p class="p5-4">
+			<router-link to="/projects">Return to projects list.</router-link>
+		</p>
 	</div>
 
 	<div class="curve1">
@@ -35,22 +46,20 @@
 
 <script>
 import projectsJson from '../projects.json';
-import bg from './bg.vue';
 import {defineComponent} from 'vue';
 
 export default defineComponent({
 	name: 'project',
 
-	components: {
-		bg
-	},
-
 	data() {
 		return {
 			project: {
+				authors: '',
+				title: '',
+				abstract: '',
 				desc: '',
 				img: '',
-				name: '',
+				tags: []
 			}
 		};
 	},
@@ -64,37 +73,41 @@ export default defineComponent({
 
 <style scoped>
 
-*{
-	margin: 0px;
-	padding: 0px;
-}
+	.project-image {
+		border: 2px solid #c14e0e;
+	}
 
-.container-fluid{
-	color: #c14e0e;
-	margin: 0px 0px 80px 0px;
-}
+/**{*/
+/*	margin: 0px;*/
+/*	padding: 0px;*/
+/*}*/
 
-.container-fluid h1{
-	font-family: 'DM Serif Text', serif;
-	font-weight: normal;
-	margin: 70px 0px 0px 0px;
-}
+/*.container-fluid{*/
+/*	color: #c14e0e;*/
+/*	margin: 0px 0px 80px 0px;*/
+/*}*/
 
-.container-fluid p{
-	font-family: 'Libre Baskerville', serif;
-	font-size: 14px;
-	weight:400;
-	stretch:100;
-	text-align: justify;
-	text-justify: inter-word;
-	margin: 40px 40px 0px 0px;
-}
+/*.container-fluid h1{*/
+/*	font-family: 'DM Serif Text', serif;*/
+/*	font-weight: normal;*/
+/*	margin: 70px 0px 0px 0px;*/
+/*}*/
 
-.media img{
-	border: 2px solid #c14e0e;
-	width: 100%;
-	margin: 40px 0px 0px 0px;
-}
+/*.container-fluid p{*/
+/*	font-family: 'Libre Baskerville', serif;*/
+/*	font-size: 14px;*/
+/*	weight:400;*/
+/*	stretch:100;*/
+/*	text-align: justify;*/
+/*	text-justify: inter-word;*/
+/*	margin: 40px 40px 0px 0px;*/
+/*}*/
+
+/*.media img{*/
+/*	border: 2px solid #c14e0e;*/
+/*	width: 100%;*/
+/*	margin: 40px 0px 0px 0px;*/
+/*}*/
 
 .curve1 img{
 	margin: 0px;

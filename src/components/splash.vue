@@ -2,9 +2,9 @@
 
     <!-- switching to bootstrap container -->
 <!--  <div class="main-contain">-->
-    <div class="container d-flex flex-column justify-content-center">
+    <div class="container-fluid d-flex flex-column justify-content-center">
 <!--        <div class="logo">-->
-        <img class="logo" src="/images/logo-splash.svg">
+        <img class="logo d-block mx-auto" src="/images/logo-splash.svg">
 <!--        </div>-->
 <!--        <div class="curve">-->
 <!--        </div>-->
@@ -37,9 +37,9 @@ export default defineComponent({
 /*    width: 80vw;*/
 /*}*/
 
-.container {
-    /* estimate height of header */
-    height: calc(100% - 40px);
+.logo {
+    width: 100%;
+    max-width: 1600px;
 }
 
 .curve {
