@@ -81,14 +81,14 @@ export default defineComponent({
 
 .container-fluid img{
 	padding: 20px 0px;
-	width: inherit;
+	width: 180px;
 }
 
 .curve1 img{
     position: fixed;
     right: 0px;
     top: 0px;
-    height: 50vh;
+    width: 36vw;
     z-index: -1;
 }
 
@@ -96,7 +96,7 @@ export default defineComponent({
     position: fixed;
     left: 0px;
     bottom: 0px;
-    height: 60vh;
+    width: 26vw;
     z-index: -1;
 }
 
