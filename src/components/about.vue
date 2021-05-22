@@ -49,24 +49,10 @@
 </template>
 
 <script>
-import bg from './bg.vue';
 import {defineComponent} from 'vue';
 
 export default defineComponent({
 	name: 'About',
-
-	components: {
-        bg
-	},
-
-	data() {
-    return {
-      projects: []
-    };
-	},
-
-	created() {
-	},
 })
 </script>
 

@@ -21,7 +21,7 @@
 <style>
     body {
         /* need !important to override bootstrap default */
-        background-color: #eaded6 !important;
+        /*background-color: #eaded6 !important;*/
         color: #c14e0e !important;
 
         /* default font for text */
@@ -40,7 +40,7 @@
 
     @media (min-width: 1200px) {
         .container {
-            width: 768px !important;
+            width: 1000px !important;
         }
     }
 
