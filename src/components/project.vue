@@ -2,11 +2,9 @@
 
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-3 leftline">
-				<img src="/images/bg-assets-19.svg">
-			</div>
+			<div class="col-3"></div>
 			<div class="col-7">
-				<h1>{{project.name}}</h1>
+				<h1>{{project.name}}<i>{{project.title}}</i></h1>
 			</div>
 			<div class="col-2"></div>
 		</div>
@@ -90,11 +88,6 @@ export default defineComponent({
 	text-align: justify;
 	text-justify: inter-word;
 	margin: 40px 40px 0px 0px;
-}
-
-.leftline img{
-	width: inherit;
-	padding: 60px 20px 0px 0px;
 }
 
 .media img{

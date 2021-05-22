@@ -120,7 +120,7 @@
           // make sure this project has something from the search criterion
           // perform (very simple) case-insensitive search over authors and
           // description
-          const searchString = (project.name + project.authors + project.desc)
+          const searchString = (project.name + project.title + project.authors + project.desc)
               .toLowerCase();
           if (this.searchQueries.length) {
             for (let query of this.searchQueries) {
