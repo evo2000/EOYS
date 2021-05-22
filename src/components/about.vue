@@ -1,5 +1,6 @@
 <template>
 
+	<!-- switching to bootstrap default styled container -->
 <!--	<div class="container-fluid">-->
 	<div class="container">
 

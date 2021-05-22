@@ -1,15 +1,17 @@
 <template>
 
-  <div class="main-contain">
-    <div class="logo">
-      <img src="/images/logo-splash.svg">
-    </div>    
-    <div class="curve">
-      <img src="/images/HOME.svg">
+    <!-- switching to bootstrap container -->
+<!--  <div class="main-contain">-->
+    <div class="container d-flex flex-column justify-content-center">
+<!--        <div class="logo">-->
+        <img class="logo" src="/images/logo-splash.svg">
+<!--        </div>-->
+<!--        <div class="curve">-->
+<!--        </div>-->
     </div>
-  </div>
+    <img class="curve" src="/images/HOME.svg">
 
-<bg/>
+    <bg/>
 
 </template>
 
@@ -19,16 +21,13 @@ import bg from './bg.vue';
 import {defineComponent} from 'vue';
 
 export default defineComponent({
-	name: 'HelloWorld',
+	name: 'Splash',
 
 	components: {
-    bg
+      bg
 	},
 
 	data() {
-    return {
-      projects: []
-    };
 	},
 
 	created() {
@@ -39,19 +38,24 @@ export default defineComponent({
 
 <style scoped>
 
-*{
-    margin: 0px;
-    padding: 0px;
+/**{*/
+/*    margin: 0px;*/
+/*    padding: 0px;*/
+/*}*/
+/**/
+/*.logo img{*/
+/*    display: block;*/
+/*    margin: auto;*/
+/*    padding-top: 14vh;*/
+/*    width: 80vw;*/
+/*}*/
+
+.container {
+    /* estimate height of header */
+    height: calc(100% - 40px);
 }
 
-.logo img{
-    display: block;
-    margin: auto;
-    padding-top: 14vh;
-    width: 80vw;
-}
-
-.curve img{
+.curve {
     position: absolute;
     right: 0px;
     bottom: 0px;

@@ -1,29 +1,16 @@
 <template>
 
-    <div class="main-contain"></div>
+    <!-- don't need this component -- just style background of index.html -->
+<!--    <div class="main-contain"></div>-->
 
 </template>
 
 <script>
-import projectsJson from '../projects.json';
 import {defineComponent} from 'vue';
 
 export default defineComponent({
 	name: 'bg',
-
-	components: {
-	},
-
-	data() {
-    return {
-      projects: []
-    };
-	},
-
-	created() {
-		this.projects = projectsJson;
-	},
-})
+});
 </script>
 
 <style scoped>

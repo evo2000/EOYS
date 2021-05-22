@@ -19,9 +19,17 @@
 </script>
 
 <style>
+    body {
+        /* need !important to override bootstrap default */
+        background-color: #eaded6 !important;
+    }
 
-*{
-    margin: 0px;
-    padding: 0px;
-}
+/** {*/
+/*    margin: 0px;*/
+/*    padding: 0px;*/
+/*}*/
+
+    template {
+        background-color: green;
+    }
 </style>
