@@ -29,7 +29,4 @@
 /*    padding: 0px;*/
 /*}*/
 
-    template {
-        background-color: green;
-    }
 </style>

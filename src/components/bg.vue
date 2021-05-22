@@ -15,16 +15,16 @@ export default defineComponent({
 
 <style scoped>
 
-.main-contain{
-    margin: 0px;
-    padding: 0px;
-    background-color: #eaded6;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -10;
-}
+/*.main-contain{*/
+/*    margin: 0px;*/
+/*    padding: 0px;*/
+/*    background-color: #eaded6;*/
+/*    width: 100vw;*/
+/*    height: 100vh;*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    z-index: -10;*/
+/*}*/
 
 </style>

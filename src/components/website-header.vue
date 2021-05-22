@@ -1,27 +1,26 @@
 <template>
-    <div class="main-contain">
-        <div class="menu">
-            <!-- nav links -->
-            <ul>
-                <li :class="{act: currentPage === 'about'}">
-                    <router-link to="/about">ABOUT</router-link>
-                </li>
-                <li :class="{act: currentPage === 'projects'}">
-                    <router-link to="/projects">PROJECTS</router-link>
-                </li>
-            </ul>
-
+<!--    <div class="main-contain">-->
+    <div class="container-fluid">
+        <div class="menu row">
             <!-- navbar logo (hide if splash page) -->
-            <router-link v-if="currentPage !== 'splash'" to="/" title="Return to homepage">
-                <img src="/images/logo.svg">
-            </router-link>
-        </div>
+            <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-start">
+                <router-link class="d-inline-block p-3"
+                             v-if="currentPage !== 'splash'"
+                             to="/" title="Return to homepage">
+                    <img class="logo" src="/images/logo.svg">
+                </router-link>
+            </div>
 
-        <!-- curve (if not splash)
-        <div class="curve" v-if="currentPage !== 'splash'">
-            <img src="/images/bg-assets-22.svg">
+            <!-- nav links -->
+            <nav class="col-12 col-md-6 d-flex flex-row justify-content-center justify-content-md-end">
+                <div :class="{act: currentPage === 'projects'}">
+                    <router-link class="d-block p-3" to="/projects">PROJECTS</router-link>
+                </div>
+                <div :class="{act: currentPage === 'about'}">
+                    <router-link class="d-block p-3" to="/about">ABOUT</router-link>
+                </div>
+            </nav>
         </div>
-        -->
     </div>
 </template>
 
@@ -65,58 +64,72 @@
 
 <style scoped>
 
-* {
-    margin: 0px;
-    padding: 0px;
-}
+    .logo {
+        height: 3em;
+    }
 
-.menu{
-    width: 100vw;
-    display: inline-block;
-}
+    nav a {
+        font-family: "Libre Baskerville", serif;
+        color: #c14e0e !important;
+        text-decoration: none;
+    }
 
-.menu ul {
-    list-style-type: none;
-}
+    nav .act a {
+        font-weight: bold;
+    }
 
-.menu li {
-    float: right;
-}
+/** {*/
+/*    margin: 0px;*/
+/*    padding: 0px;*/
+/*}*/
 
-.menu li a {
-    display: block;
-    font-family: 'Libre Baskerville', serif;
-    color: #c14e0e;
-    font-size: 14px;
-    margin: 30px 60px 0px 0px;
-    text-decoration: none;
-    border-bottom: 2px solid rgba(0, 0, 0, 0);
-    transition: border-bottom 0.5s;
-}
+/*.menu{*/
+/*    width: 100vw;*/
+/*    display: inline-block;*/
+/*}*/
 
-.act a {
-    font-weight: bold;
-}
+/*.menu ul {*/
+/*    list-style-type: none;*/
+/*}*/
 
-.menu li a:hover {
-    border-bottom: 2px solid #c14e0e;
-}
+/*.menu li {*/
+/*    float: right;*/
+/*}*/
 
-.menu li a:visited {
-    color: #c14e0e;
-}
+/*.menu li a {*/
+/*    display: block;*/
+/*    font-family: 'Libre Baskerville', serif;*/
+/*    color: #c14e0e;*/
+/*    font-size: 14px;*/
+/*    margin: 30px 60px 0px 0px;*/
+/*    text-decoration: none;*/
+/*    border-bottom: 2px solid rgba(0, 0, 0, 0);*/
+/*    transition: border-bottom 0.5s;*/
+/*}*/
 
-.menu img {
-    height: 60px;
-    padding: 20px 0px 0px 40px;
-}
+/*.act a {*/
+/*    font-weight: bold;*/
+/*}*/
 
-.curve img {
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    height: 80vh;
-    z-index: -1;
-}
+/*.menu li a:hover {*/
+/*    border-bottom: 2px solid #c14e0e;*/
+/*}*/
+
+/*.menu li a:visited {*/
+/*    color: #c14e0e;*/
+/*}*/
+
+/*.menu img {*/
+/*    height: 60px;*/
+/*    padding: 20px 0px 0px 40px;*/
+/*}*/
+
+/*.curve img {*/
+/*    position: absolute;*/
+/*    right: 0px;*/
+/*    top: 0px;*/
+/*    height: 80vh;*/
+/*    z-index: -1;*/
+/*}*/
 
 </style>
