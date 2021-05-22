@@ -77,7 +77,7 @@ export default defineComponent({
 .container-fluid h1{
 	font-family: 'DM Serif Text', serif;
 	font-weight: normal;
-	margin: 40px 0px 0px 0px;
+	margin: 70px 0px 0px 0px;
 }
 
 .container-fluid p{

@@ -68,7 +68,7 @@ export default defineComponent({
 }
 
 .container-fluid h1{
-	padding: 40px 0px 0px 0px;
+	padding: 70px 0px 0px 0px;
 	font-family: 'DM Serif Text', serif;
 	font-weight: normal;
 }
