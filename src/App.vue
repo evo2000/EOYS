@@ -3,20 +3,29 @@
     <!-- switching to regular bootstrap -->
 <!--  <link href="../bootstrap-grid.css" rel="stylesheet">-->
 
+    <!-- header -->
     <website-header :currentPage="currentPage" />
+
+    <!-- body -->
     <router-view />
 
-    <!-- force triggering of background-color computed property -->
-    {{bgColor}}
+    <!-- footer -->
+    <!-- TODO -->
+
+    <!-- background curves and color -->
+    <background :currentPage="currentPage" />
+
 </template>
 
 <script>
   import {defineComponent} from 'vue';
   import WebsiteHeader from './components/website-header.vue';
+  import Background from './components/background.vue';
   export default defineComponent({
     name: 'App',
     components: {
-      WebsiteHeader
+      WebsiteHeader,
+      Background
     },
 
     data() {
@@ -47,49 +56,21 @@
         }
       },
 
-      /* update background color on route change */
-      bgColor() {
-        if (this.currentPage === 'splash') {
-          document.body.classList.add('splash');
-        } else {
-          document.body.classList.remove('splash');
-        }
-
-        // only animate bg after initial page load
-        if (this.initialLoad) {
-          setTimeout(() => {
-            document.body.classList.add('animated-bg');
-          }, 10);
-          this.initialLoad = false;
-        }
-
-        return "";
-      }
     }
   });
 </script>
 
+<!-- global(-ish) styles go here -->
 <style>
+    /* need !important to override bootstrap defaults */
     body {
-        /* need !important to override bootstrap default */
-        /*background-color: #eaded6 !important;*/
         color: #c14e0e !important;
 
         /* default font for text */
         font-family: "Libre Baskerville", serif !important;
-
     }
 
-    /* animate background color -- only want to set this after initial load */
-    body.animated-bg {
-        transition: background-color 0.5s;
-    }
-
-    /* only background color on splash page */
-    body.splash {
-        background-color: #eaded6 !important;
-    }
-
+    /* links should follow text color */
     a {
         font-family: inherit !important;
         color: inherit !important;
@@ -100,6 +81,7 @@
         font-family: 'DM Serif Text', serif;
     }
 
+    /* default bootstrap container is too wide */
     @media (min-width: 1200px) {
         .container {
             width: 1000px !important;
