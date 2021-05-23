@@ -1,6 +1,7 @@
 - handle multiple images for each project
 - lightbox for each project
 - footer?
+- make projects indexed by title not index
 - populate project and team data
 - projects list page search on url parameters
 - DONE hide background graphics on small screens

@@ -2,7 +2,6 @@
 
 <template>
     <div class="container">
-
         <div class="row">
 
             <!-- controls and filter -->
@@ -12,7 +11,7 @@
                             <!-- filters and sort controls -->
                             <div class="controls">
                                 <p class="mb-0">Filter by tags</p>
-                                <span class="tag badge d-inline-block mr-1"
+                                <span class="tag badge d-inline-block me-1"
                                       v-for="tag of tags"
                                       :key="tag.name"
                                       :class="{'selected-tag': tag.selected}"
@@ -72,23 +71,7 @@
                 </ul>
             </div>
         </div>
-
-
-<!--        <div class="d-none d-md-block">-->
-            <!-- abstract preview -->
-<!--            <div class="pop-up" v-if="currentProject !== null" >-->
-<!--                <h1>{{currentProject.title}}</h1>-->
-<!--                <p>{{currentProject.abstract}}</p>-->
-<!--            </div>-->
-
-<!--            <div class="curve">-->
-<!--                <img src="/images/PROJECT.svg">-->
-<!--            </div>-->
-<!--        </div>-->
-
     </div>
-
-
 </template>
 
 <script>
@@ -179,7 +162,6 @@
 </script>
 
 <style scoped>
-
     .tag {
         color: inherit;
         border: 1px solid #c14e0e;
@@ -202,109 +184,4 @@
         border-color: #c14e0e;
         color: white !important;
     }
-
-/**{*/
-/*    padding: 0px;*/
-/*    margin: 0px;*/
-/*    box-sizing: border-box;*/
-/*}*/
-
-/*.nav-bar{*/
-/*    padding: 70px 0px 30px 40px;*/
-/*    color: #c14e0e;*/
-/*    font-size: 20px;*/
-/*}*/
-
-/*.nav-bar h3{*/
-/*    font-size: 14px;*/
-/*    font-family: 'Libre Baskerville', serif;*/
-/*    font-weight: normal;*/
-/*    padding-bottom: 20px;*/
-/*}*/
-
-/*.tags{*/
-/*    display: inline-block;*/
-/*}*/
-
-/*.tags p{*/
-/*    color: #c14e0e;*/
-/*    font-size: 14px;*/
-/*    padding: 6px;*/
-/*    margin: 0px 10px 20px 0px;*/
-/*    border: 1px solid #c14e0e;*/
-/*    border-radius: 5px;*/
-/*    font-family: 'Libre Baskerville', serif;*/
-/*    cursor: pointer;*/
-/*}*/
-
-/*.selected-tag p{*/
-/*    color: #eaded6;*/
-/*    background-color: #c14e0e;*/
-/*}*/
-
-/*.search{*/
-/*    display: relative;*/
-/*    font-family: 'Libre Baskerville', serif;*/
-/*    font-size: 14px;*/
-/*    border: 1px solid #c14e0e;*/
-/*    border-radius: 5px;*/
-/*    padding: 6px;*/
-/*    outline: 0px;*/
-/*    background-color: #eaded6;*/
-/*    color: #c14e0e;*/
-/*}*/
-
-/*.list{*/
-/*    width: 50vw;*/
-/*    padding: 30px 0px 0px 40px;*/
-/*}*/
-
-/*.list a{*/
-/*    font-family: 'DM Serif Text', serif;*/
-/*    font-weight: normal;*/
-/*    text-decoration: none;*/
-/*    color: #c14e0e;*/
-/*    font-size: 20px;*/
-/*    display: inline;*/
-/*}*/
-
-/*.pop-up{*/
-/*    bottom: 0;*/
-/*    right: 0;*/
-/*    position: fixed;*/
-/*    width: 40vw;*/
-/*    margin: 0px 40px 40px 0px;*/
-/*    color: #c14e0e;*/
-/*    background-color: #eaded6;*/
-/*    border: 2px solid #c14e0e;*/
-/*}*/
-
-/*.pop-up h1{*/
-/*    font-size: 20px;*/
-/*    font-weight: normal;*/
-/*    font-family: 'DM Serif Text', serif;*/
-/*    padding: 20px 20px 0px 20px;*/
-/*}*/
-
-/*.pop-up p{*/
-/*    padding: 20px;*/
-/*    font-family: 'Libre Baskerville', serif;*/
-/*    font-size: 14px;*/
-/*}*/
-
-/*.no-match{*/
-/*    font-family: 'DM Serif Text', serif;*/
-/*    color: #c14e0e;*/
-/*    padding: 20px 0px 0px 40px;*/
-/*    font-size: 32px;*/
-/*}*/
-
-.curve img{
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    height: 100vh;
-    z-index: -1;
-}
-
 </style>
