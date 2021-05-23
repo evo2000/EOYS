@@ -1,8 +1,5 @@
 <template>
 
-    <!-- switching to regular bootstrap -->
-<!--  <link href="../bootstrap-grid.css" rel="stylesheet">-->
-
     <!-- header -->
     <website-header :currentPage="currentPage" />
 
@@ -88,10 +85,5 @@
             width: 1000px !important;
         }
     }
-
-/** {*/
-/*    margin: 0px;*/
-/*    padding: 0px;*/
-/*}*/
 
 </style>

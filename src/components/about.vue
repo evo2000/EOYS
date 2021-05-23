@@ -1,7 +1,6 @@
 <template>
 
 	<!-- switching to bootstrap default styled container -->
-<!--	<div class="container-fluid">-->
 	<div class="container">
 
 		<h1>Message from The Dean</h1>
@@ -9,42 +8,12 @@
 
 		<!-- signature align right -->
 		<div class="d-flex justify-content-end">
-			<img class="signature pt-3 mr-5" src="/images/signature.png">
+			<img class="signature pt-3 me-5" src="/images/signature.png">
 		</div>
 
 		<h1>The Graphics Team</h1>
 		<p class="pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a molestie orci. Vestibulum ut tincidunt nisl, ac dignissim elit. Maecenas non nibh molestie, vehicula est et, pretium orci. Aliquam erat volutpat. Sed dictum lorem sed ligula fringilla dapibus. Donec sit amet metus ipsum. Suspendisse tempor malesuada eros in tincidunt. Praesent eleifend mollis tellus non tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus venenatis neque id lorem elementum, nec gravida libero facilisis. Nam nec nibh sodales, euismod lectus in, pharetra metus. Maecenas dignissim vulputate nisi. Suspendisse potenti. Morbi maximus turpis eget tortor semper sollicitudin. Curabitur tincidunt erat at interdum volutpat. Pellentesque commodo dui sem, quis maximus nibh ornare lacinia.</p>
-
-		<!--		<div class="row pt-5">-->
-		<!--			<div class="col-0 col-sm-1 col-lg-3"></div>-->
-<!--			<div class="col-12 col-sm-10 col-lg-6">-->
-<!--				<h1>Message from The Dean</h1>-->
-<!--				<p class="pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a molestie orci. Vestibulum ut tincidunt nisl, ac dignissim elit. Maecenas non nibh molestie, vehicula est et, pretium orci. Aliquam erat volutpat. Sed dictum lorem sed ligula fringilla dapibus. Donec sit amet metus ipsum. Suspendisse tempor malesuada eros in tincidunt. Praesent eleifend mollis tellus non tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus venenatis neque id lorem elementum, nec gravida libero facilisis. Nam nec nibh sodales, euismod lectus in, pharetra metus. Maecenas dignissim vulputate nisi. Suspendisse potenti. Morbi maximus turpis eget tortor semper sollicitudin. Curabitur tincidunt erat at interdum volutpat. Pellentesque commodo dui sem, quis maximus nibh ornare lacinia.</p>-->
-
-<!--                &lt;!&ndash; signature align right &ndash;&gt;-->
-<!--				<div class="d-flex justify-content-end">-->
-<!--					<img class="signature pt-3 mr-5" src="/images/signature.png">-->
-<!--				</div>-->
-<!--			</div>-->
-<!--			<div class="col-0 col-sm-1 col-lg-3"></div>-->
-<!--		</div>-->
-
-<!--		<div class="row pt-5">-->
-<!--			<div class="col-0 col-sm-1 col-lg-3"></div>-->
-<!--			<div class="col-12 col-sm-10 col-lg-6">-->
-<!--				<h1>The Graphics Team</h1>-->
-<!--				<p class="pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a molestie orci. Vestibulum ut tincidunt nisl, ac dignissim elit. Maecenas non nibh molestie, vehicula est et, pretium orci. Aliquam erat volutpat. Sed dictum lorem sed ligula fringilla dapibus. Donec sit amet metus ipsum. Suspendisse tempor malesuada eros in tincidunt. Praesent eleifend mollis tellus non tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus venenatis neque id lorem elementum, nec gravida libero facilisis. Nam nec nibh sodales, euismod lectus in, pharetra metus. Maecenas dignissim vulputate nisi. Suspendisse potenti. Morbi maximus turpis eget tortor semper sollicitudin. Curabitur tincidunt erat at interdum volutpat. Pellentesque commodo dui sem, quis maximus nibh ornare lacinia.</p>-->
-<!--			</div>-->
-<!--			<div class="col-0 col-sm-1 col-lg-3"></div>-->
-<!--		</div>-->
 	</div>
-
-    <!-- background graphics -->
-<!--	<img class="curve1 d-none d-md-block" src="/images/ABOUT-top.svg">-->
-<!--	<img class="curve2 d-none d-md-block" src="/images/ABOUT-bottom.svg">-->
-
-	<!-- don't need this anymore -->
-<!--	<bg/>-->
 
 </template>
 
@@ -57,53 +26,8 @@ export default defineComponent({
 </script>
 
 <style scoped>
-
 	.signature {
 		max-width: 100%;
 		width: 180px;
 	}
-
-/**{*/
-/*	margin: 0px;*/
-/*	padding: 0px;*/
-/*}*/
-
-/*.container-fluid{*/
-/*	color: #c14e0e;*/
-/*}*/
-
-/*.container-fluid h1{*/
-/*	padding: 70px 0px 0px 0px;*/
-/*	font-family: 'DM Serif Text', serif;*/
-/*	font-weight: normal;*/
-/*}*/
-
-/*.container-fluid p{*/
-/*	margin: 20px 0px 0px 0px;*/
-/*	font-family: 'Libre Baskerville', serif;*/
-/*	font-size: 14px;*/
-/*}*/
-
-/*.container-fluid img{*/
-/*	padding: 20px 0px;*/
-/*	width: 180px;*/
-/*}*/
-
-    /* moved to background */
-	/*.curve1 {*/
-	/*	position: fixed;*/
-	/*	right: 0px;*/
-	/*	top: 0px;*/
-	/*	width: 36vw;*/
-	/*	z-index: -1;*/
-	/*}*/
-
-	/*.curve2 {*/
-	/*	position: fixed;*/
-	/*	left: 0px;*/
-	/*	bottom: 0px;*/
-	/*	width: 26vw;*/
-	/*	z-index: -1;*/
-	/*}*/
-
 </style>

@@ -2,25 +2,25 @@
 
 <template>
     <!-- splash page -->
-    <img class="curve splash"
+    <img class="curve splash d-none d-md-block"
          :class="{show: currentPage === 'splash'}"
          src="/images/HOME.svg">
 
     <!-- about page -->
-    <img class="curve about1"
+    <img class="curve about1 d-none d-md-block"
          :class="{show: currentPage === 'about'}"
          src="/images/ABOUT-top.svg">
-    <img class="curve about2"
+    <img class="curve about2 d-none d-md-block"
          :class="{show: currentPage === 'about'}"
          src="/images/ABOUT-bottom.svg">
 
     <!-- projects list page -->
-    <img class="curve projects"
+    <img class="curve projects d-none d-md-block"
          :class="{show: currentPage === 'projects'}"
          src="/images/PROJECT.svg">
 
     <!-- project page -->
-    <img class="curve project"
+    <img class="curve project d-none d-md-block"
          :class="{show: currentPage === 'project'}"
          src="/images/STUDENT_PROJECT.svg">
 </template>
@@ -66,7 +66,7 @@
 <style>
     /* animate background color -- only want to set this after initial load */
     body.animated-bg {
-        transition: background-color 0.5s;
+        transition: background-color 0.7s;
     }
 
     /* background color on splash page only, white otherwise */
@@ -78,7 +78,7 @@
         position: fixed;
         z-index: -1;
 
-        transition: opacity 0.5s;
+        transition: opacity 0.7s;
         opacity: 0;
     }
 

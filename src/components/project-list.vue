@@ -2,17 +2,17 @@
 
 <template>
     <div class="container">
-
         <div class="row">
 
             <!-- controls and filter -->
             <div class="col-12 col-md-6 col-lg-4 order-md-2">
-                <div class="card">
-                    <div class="card-body">
+                <div class="card small">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item py-3">
                             <!-- filters and sort controls -->
                             <div class="controls">
-                                <p class="mb-0">Filter by tags</p>
-                                <span class="tag badge d-inline-block mr-1"
+                                <p class="mb-0">Filter projects by tags</p>
+                                <span class="tag badge d-inline-block me-1"
                                       v-for="tag of tags"
                                       :key="tag.name"
                                       :class="{'selected-tag': tag.selected}"
@@ -20,35 +20,47 @@
                                     {{tag.name}}
                                 </span>
 
-                                <p class="mt-3 mb-0">Search projects</p>
+                                <p class="mt-4 mb-0">Search projects</p>
                                 <div class="search-contain">
                                     <input class="search form-control"
+                                           style="font-size:small !important;"
                                            type="text"
                                            placeholder=""
                                            v-model="search" />
                                 </div>
 
                                 <!-- show current filters -->
-                                <small v-if="currentFilters" class="form-text text-secondary">
+                                <p v-if="currentFilters"
+                                   class="form-text text-secondary small mb-0">
                                     current filters: {{currentFilters}}
-                                </small>
+                                </p>
                             </div>
-                    </div>
+                        </li>
+
+                        <li class="list-group-item pt-3"
+                            v-if="currentProject !== null">
+<!--                            <div v-if="currentProject === null">-->
+<!--                                <p>Hover over project to view abstract</p>-->
+<!--                            </div>-->
+
+<!--                            <div v-if="currentProject !== null">-->
+                                <h3>{{currentProject.title}}</h3>
+                                <p>{{currentProject.abstract}}</p>
+<!--                            </div>-->
+                        </li>
+                    </ul>
                 </div>
 
                 <!-- project abstract (only on large screens) -->
-                <div class="d-none d-md-block mt-4">
-                    <div v-if="currentProject === null">
-                        <p>Hover over a project to preview its abstract.</p>
-                    </div>
+<!--                <div class="d-none d-md-block mt-4">-->
 
-                    <div class="card" v-if="currentProject !== null">
-                        <div class="card-body">
-                            <h3>{{currentProject.title}}</h3>
-                            <p>{{currentProject.abstract}}</p>
-                        </div>
-                    </div>
-                </div>
+<!--                    <div class="card" v-if="currentProject !== null">-->
+<!--                        <div class="card-body">-->
+<!--                            <h3>{{currentProject.title}}</h3>-->
+<!--                            <p>{{currentProject.abstract}}</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
             </div>
 
             <!-- project list -->
@@ -72,23 +84,7 @@
                 </ul>
             </div>
         </div>
-
-
-<!--        <div class="d-none d-md-block">-->
-            <!-- abstract preview -->
-<!--            <div class="pop-up" v-if="currentProject !== null" >-->
-<!--                <h1>{{currentProject.title}}</h1>-->
-<!--                <p>{{currentProject.abstract}}</p>-->
-<!--            </div>-->
-
-<!--            <div class="curve">-->
-<!--                <img src="/images/PROJECT.svg">-->
-<!--            </div>-->
-<!--        </div>-->
-
     </div>
-
-
 </template>
 
 <script>
@@ -179,7 +175,6 @@
 </script>
 
 <style scoped>
-
     .tag {
         color: inherit;
         border: 1px solid #c14e0e;
@@ -202,109 +197,4 @@
         border-color: #c14e0e;
         color: white !important;
     }
-
-/**{*/
-/*    padding: 0px;*/
-/*    margin: 0px;*/
-/*    box-sizing: border-box;*/
-/*}*/
-
-/*.nav-bar{*/
-/*    padding: 70px 0px 30px 40px;*/
-/*    color: #c14e0e;*/
-/*    font-size: 20px;*/
-/*}*/
-
-/*.nav-bar h3{*/
-/*    font-size: 14px;*/
-/*    font-family: 'Libre Baskerville', serif;*/
-/*    font-weight: normal;*/
-/*    padding-bottom: 20px;*/
-/*}*/
-
-/*.tags{*/
-/*    display: inline-block;*/
-/*}*/
-
-/*.tags p{*/
-/*    color: #c14e0e;*/
-/*    font-size: 14px;*/
-/*    padding: 6px;*/
-/*    margin: 0px 10px 20px 0px;*/
-/*    border: 1px solid #c14e0e;*/
-/*    border-radius: 5px;*/
-/*    font-family: 'Libre Baskerville', serif;*/
-/*    cursor: pointer;*/
-/*}*/
-
-/*.selected-tag p{*/
-/*    color: #eaded6;*/
-/*    background-color: #c14e0e;*/
-/*}*/
-
-/*.search{*/
-/*    display: relative;*/
-/*    font-family: 'Libre Baskerville', serif;*/
-/*    font-size: 14px;*/
-/*    border: 1px solid #c14e0e;*/
-/*    border-radius: 5px;*/
-/*    padding: 6px;*/
-/*    outline: 0px;*/
-/*    background-color: #eaded6;*/
-/*    color: #c14e0e;*/
-/*}*/
-
-/*.list{*/
-/*    width: 50vw;*/
-/*    padding: 30px 0px 0px 40px;*/
-/*}*/
-
-/*.list a{*/
-/*    font-family: 'DM Serif Text', serif;*/
-/*    font-weight: normal;*/
-/*    text-decoration: none;*/
-/*    color: #c14e0e;*/
-/*    font-size: 20px;*/
-/*    display: inline;*/
-/*}*/
-
-/*.pop-up{*/
-/*    bottom: 0;*/
-/*    right: 0;*/
-/*    position: fixed;*/
-/*    width: 40vw;*/
-/*    margin: 0px 40px 40px 0px;*/
-/*    color: #c14e0e;*/
-/*    background-color: #eaded6;*/
-/*    border: 2px solid #c14e0e;*/
-/*}*/
-
-/*.pop-up h1{*/
-/*    font-size: 20px;*/
-/*    font-weight: normal;*/
-/*    font-family: 'DM Serif Text', serif;*/
-/*    padding: 20px 20px 0px 20px;*/
-/*}*/
-
-/*.pop-up p{*/
-/*    padding: 20px;*/
-/*    font-family: 'Libre Baskerville', serif;*/
-/*    font-size: 14px;*/
-/*}*/
-
-/*.no-match{*/
-/*    font-family: 'DM Serif Text', serif;*/
-/*    color: #c14e0e;*/
-/*    padding: 20px 0px 0px 40px;*/
-/*    font-size: 32px;*/
-/*}*/
-
-.curve img{
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    height: 100vh;
-    z-index: -1;
-}
-
 </style>
