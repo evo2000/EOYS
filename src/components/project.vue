@@ -4,21 +4,22 @@
 
 <!--	<div class="container-fluid">-->
 	<div class="container" v-if="!projectNotFound">
-        <!-- project title -->
-		<h3><em>{{project.title}}</em></h3>
-		<h5>{{project.authors}}</h5>
-		<p>
-			Tagged:
-			<router-link v-for="tag of project.tags"
-                         class="d-inline-block pr-2"
-						 :to="'/projects?tags=' + tag">
-				{{tag}}
-			</router-link>
-		</p>
 
         <!-- project abstract and images -->
         <div class="row">
 			<div class="pt-3 col-12 col-md-7">
+				<!-- project title -->
+				<h3><em>{{project.title}}</em></h3>
+				<h5>{{project.authors}}</h5>
+				<p>
+					Tagged:
+					<router-link v-for="tag of project.tags"
+								 class="d-inline-block pr-2"
+								 :to="'/projects?tags=' + tag">
+						{{tag}}
+					</router-link>
+				</p>
+
 				<h5>Abstract</h5>
 				<p>{{project.abstract}}</p>
 			</div>
@@ -27,8 +28,12 @@
 			</div>
 		</div>
 
-		<h5 class="pt-4">Full Description</h5>
-		<p>{{project.desc}}</p>
+        <div class="row">
+			<div class="pt-4 col-12 col-md-7">
+				<h5 class="pt-4">Full Description</h5>
+				<p>{{project.desc}}</p>
+			</div>
+		</div>
 
 		<p class="pt-4 pb-5">
 			<router-link to="/projects">Return to projects list.</router-link>
