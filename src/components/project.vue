@@ -2,7 +2,6 @@
 
 	<page-not-found v-if="projectNotFound" />
 
-<!--	<div class="container-fluid">-->
 	<div class="container" v-if="!projectNotFound">
 
         <!-- project abstract and images -->
@@ -24,7 +23,11 @@
 				<p>{{project.abstract}}</p>
 			</div>
 			<div class="pt-3 col-12 col-md-5 pl-md-4">
-				<img class="project-image w-100" :src='project.img'/>
+				<a :href="project.img"
+				   data-lightbox="project-image">
+					<img :src="project.img"
+						 class="project-image w-100">
+				</a>
 			</div>
 		</div>
 
