@@ -3,24 +3,40 @@
     <!-- switching to regular bootstrap -->
 <!--  <link href="../bootstrap-grid.css" rel="stylesheet">-->
 
+    <!-- header -->
     <website-header :currentPage="currentPage" />
+
+    <!-- body -->
     <router-view />
 
-    <!-- force triggering of background-color computed property -->
-    {{bgColor}}
+    <!-- footer -->
+    <!-- TODO -->
+
+    <!-- background curves and color -->
+    <background :currentPage="currentPage" />
+
 </template>
 
 <script>
   import {defineComponent} from 'vue';
   import WebsiteHeader from './components/website-header.vue';
+  import Background from './components/background.vue';
   export default defineComponent({
     name: 'App',
     components: {
-      WebsiteHeader
+      WebsiteHeader,
+      Background
     },
+
+    data() {
+      return {
+        initialLoad: true,
+      };
+    },
+
     computed: {
 
-      // will return one of ['splash', 'projects', 'about', 'other']
+      // will return one of ['splash', 'project', 'projects', 'about', 'other']
       currentPage() {
         // get route components, switch on first route component
         // should be a flexible-enough system
@@ -34,50 +50,28 @@
         } else if (currentPath[0] === 'about') {
           return 'about';
         } else if (currentPath[0] === 'projects') {
-          return 'projects';
+          // differentiate between projects list and a particular project
+          return currentPath[1] ? 'project' : 'projects';
         } else {
           return 'other';
         }
       },
 
-      /* update background color on route change */
-      bgColor() {
-        if (this.currentPage === 'splash') {
-          document.body.classList.add('splash');
-        } else {
-          document.body.classList.remove('splash');
-        }
-        document.body.classList.backgroundColor = this.currentPage === 'splash'
-            ? '#eaded6 !important' : 'white !important';
-
-        console.log(document.body);
-        console.log(this.currentPage);
-        console.log(document.body.style.backgroundColor);
-
-        return "";
-      }
     }
   });
 </script>
 
+<!-- global(-ish) styles go here -->
 <style>
+    /* need !important to override bootstrap defaults */
     body {
-        /* need !important to override bootstrap default */
-        /*background-color: #eaded6 !important;*/
         color: #c14e0e !important;
 
         /* default font for text */
         font-family: "Libre Baskerville", serif !important;
-
-        /* animate background color */
-        transition: background-color 0.5s;
     }
 
-    /* only background color on splash page */
-    body.splash {
-        background-color: #eaded6 !important;
-    }
-
+    /* links should follow text color */
     a {
         font-family: inherit !important;
         color: inherit !important;
@@ -88,6 +82,7 @@
         font-family: 'DM Serif Text', serif;
     }
 
+    /* default bootstrap container is too wide */
     @media (min-width: 1200px) {
         .container {
             width: 1000px !important;

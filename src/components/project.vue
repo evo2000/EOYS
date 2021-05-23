@@ -1,22 +1,25 @@
 <template>
 
+	<page-not-found v-if="projectNotFound" />
+
 <!--	<div class="container-fluid">-->
-	<div class="container">
-        <!-- project title -->
-		<h3><em>{{project.title}}</em></h3>
-		<h5>{{project.authors}}</h5>
-		<p>
-			Tagged:
-			<router-link v-for="tag of project.tags"
-                         class="d-inline-block pr-2"
-						 :to="'/projects?tags=' + tag">
-				{{tag}}
-			</router-link>
-		</p>
+	<div class="container" v-if="!projectNotFound">
 
         <!-- project abstract and images -->
         <div class="row">
 			<div class="pt-3 col-12 col-md-7">
+				<!-- project title -->
+				<h3><em>{{project.title}}</em></h3>
+				<h5>{{project.authors}}</h5>
+				<p>
+					Tagged:
+					<router-link v-for="tag of project.tags"
+								 class="d-inline-block pr-2"
+								 :to="'/projects?tags=' + tag">
+						{{tag}}
+					</router-link>
+				</p>
+
 				<h5>Abstract</h5>
 				<p>{{project.abstract}}</p>
 			</div>
@@ -25,34 +28,46 @@
 			</div>
 		</div>
 
-		<h5 class="pt-4">Full Description</h5>
-		<p>{{project.desc}}</p>
+        <div class="row">
+			<div class="pt-4 col-12 col-md-7">
+				<h5 class="pt-4">Full Description</h5>
+				<p>{{project.desc}}</p>
+			</div>
+		</div>
 
-		<p class="p5-4">
+		<p class="pt-4 pb-5">
 			<router-link to="/projects">Return to projects list.</router-link>
 		</p>
 	</div>
 
-	<div class="curve1">
-		<img src="/images/STUDENT_PROJECT.svg">
-	</div>
-	<div class="curve2">
-        <img src="/images/ABOUT-bottom.svg">
-    </div>
+	<!-- moved to backgrounds -->
+<!--	<div class="curve1">-->
+<!--		<img src="/images/STUDENT_PROJECT.svg">-->
+<!--	</div>-->
+<!--	<div class="curve2">-->
+<!--        <img src="/images/ABOUT-bottom.svg">-->
+<!--    </div>-->
 
-	<bg/>
+	<!-- don't need this anymore -->
+<!--	<bg/>-->
 
 </template>
 
 <script>
 import projectsJson from '../projects.json';
 import {defineComponent} from 'vue';
+import PageNotFound from './page-not-found.vue';
 
 export default defineComponent({
 	name: 'project',
 
+	components: {
+		PageNotFound,
+	},
+
 	data() {
 		return {
+			projectNotFound: false,
 			project: {
 				authors: '',
 				title: '',
@@ -66,6 +81,14 @@ export default defineComponent({
 
 	created() {
 		const projectid = parseInt(this.$route.params.projectid);
+
+		// error handling
+		if (isNaN(projectid)
+				|| projectid < 0
+				|| projectid >= projectsJson.length) {
+			this.projectNotFound = true;
+		}
+
 		this.project = projectsJson[projectid];
 	},
 })
@@ -109,24 +132,25 @@ export default defineComponent({
 /*	margin: 40px 0px 0px 0px;*/
 /*}*/
 
-.curve1 img{
-	margin: 0px;
-	padding: 0px;
-    position: fixed;
-    right: 0px;
-    top: 0px;
-    height: 130vh;
-    z-index: -1;
-}
+    /* moved to background */
+/*.curve1 img{*/
+/*	margin: 0px;*/
+/*	padding: 0px;*/
+/*    position: fixed;*/
+/*    right: 0px;*/
+/*    top: 0px;*/
+/*    height: 130vh;*/
+/*    z-index: -1;*/
+/*}*/
 
-.curve2 img{
-	margin: 0px;
-	padding: 0px;
-    position: fixed;
-    left: 0px;
-    bottom: 0px;
-    width: 26vw;
-    z-index: -1;
-}
+/*.curve2 img{*/
+/*	margin: 0px;*/
+/*	padding: 0px;*/
+/*    position: fixed;*/
+/*    left: 0px;*/
+/*    bottom: 0px;*/
+/*    width: 26vw;*/
+/*    z-index: -1;*/
+/*}*/
 
 </style>

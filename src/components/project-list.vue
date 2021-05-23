@@ -1,3 +1,5 @@
+<!-- TODO: allow for search from URL params -->
+
 <template>
     <div class="container">
 
@@ -72,17 +74,17 @@
         </div>
 
 
-        <div class="d-none d-md-block">
+<!--        <div class="d-none d-md-block">-->
             <!-- abstract preview -->
 <!--            <div class="pop-up" v-if="currentProject !== null" >-->
 <!--                <h1>{{currentProject.title}}</h1>-->
 <!--                <p>{{currentProject.abstract}}</p>-->
 <!--            </div>-->
 
-            <div class="curve">
-                <img src="/images/PROJECT.svg">
-            </div>
-        </div>
+<!--            <div class="curve">-->
+<!--                <img src="/images/PROJECT.svg">-->
+<!--            </div>-->
+<!--        </div>-->
 
     </div>
 
