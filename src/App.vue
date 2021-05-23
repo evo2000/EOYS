@@ -36,7 +36,7 @@
 
     computed: {
 
-      // will return one of ['splash', 'projects', 'about', 'other']
+      // will return one of ['splash', 'project', 'projects', 'about', 'other']
       currentPage() {
         // get route components, switch on first route component
         // should be a flexible-enough system
@@ -50,7 +50,8 @@
         } else if (currentPath[0] === 'about') {
           return 'about';
         } else if (currentPath[0] === 'projects') {
-          return 'projects';
+          // differentiate between projects list and a particular project
+          return currentPath[1] ? 'project' : 'projects';
         } else {
           return 'other';
         }

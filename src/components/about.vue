@@ -40,8 +40,8 @@
 	</div>
 
     <!-- background graphics -->
-	<img class="curve1 d-none d-md-block" src="/images/ABOUT-top.svg">
-	<img class="curve2 d-none d-md-block" src="/images/ABOUT-bottom.svg">
+<!--	<img class="curve1 d-none d-md-block" src="/images/ABOUT-top.svg">-->
+<!--	<img class="curve2 d-none d-md-block" src="/images/ABOUT-bottom.svg">-->
 
 	<!-- don't need this anymore -->
 <!--	<bg/>-->
@@ -89,20 +89,21 @@ export default defineComponent({
 /*	width: 180px;*/
 /*}*/
 
-	.curve1 {
-		position: fixed;
-		right: 0px;
-		top: 0px;
-		width: 36vw;
-		z-index: -1;
-	}
+    /* moved to background */
+	/*.curve1 {*/
+	/*	position: fixed;*/
+	/*	right: 0px;*/
+	/*	top: 0px;*/
+	/*	width: 36vw;*/
+	/*	z-index: -1;*/
+	/*}*/
 
-	.curve2 {
-		position: fixed;
-		left: 0px;
-		bottom: 0px;
-		width: 26vw;
-		z-index: -1;
-	}
+	/*.curve2 {*/
+	/*	position: fixed;*/
+	/*	left: 0px;*/
+	/*	bottom: 0px;*/
+	/*	width: 26vw;*/
+	/*	z-index: -1;*/
+	/*}*/
 
 </style>

@@ -28,19 +28,21 @@
 		<h5 class="pt-4">Full Description</h5>
 		<p>{{project.desc}}</p>
 
-		<p class="p5-4">
+		<p class="pt-4 pb-5">
 			<router-link to="/projects">Return to projects list.</router-link>
 		</p>
 	</div>
 
-	<div class="curve1">
-		<img src="/images/STUDENT_PROJECT.svg">
-	</div>
-	<div class="curve2">
-        <img src="/images/ABOUT-bottom.svg">
-    </div>
+	<!-- moved to backgrounds -->
+<!--	<div class="curve1">-->
+<!--		<img src="/images/STUDENT_PROJECT.svg">-->
+<!--	</div>-->
+<!--	<div class="curve2">-->
+<!--        <img src="/images/ABOUT-bottom.svg">-->
+<!--    </div>-->
 
-	<bg/>
+	<!-- don't need this anymore -->
+<!--	<bg/>-->
 
 </template>
 
@@ -109,24 +111,25 @@ export default defineComponent({
 /*	margin: 40px 0px 0px 0px;*/
 /*}*/
 
-.curve1 img{
-	margin: 0px;
-	padding: 0px;
-    position: fixed;
-    right: 0px;
-    top: 0px;
-    height: 130vh;
-    z-index: -1;
-}
+    /* moved to background */
+/*.curve1 img{*/
+/*	margin: 0px;*/
+/*	padding: 0px;*/
+/*    position: fixed;*/
+/*    right: 0px;*/
+/*    top: 0px;*/
+/*    height: 130vh;*/
+/*    z-index: -1;*/
+/*}*/
 
-.curve2 img{
-	margin: 0px;
-	padding: 0px;
-    position: fixed;
-    left: 0px;
-    bottom: 0px;
-    width: 26vw;
-    z-index: -1;
-}
+/*.curve2 img{*/
+/*	margin: 0px;*/
+/*	padding: 0px;*/
+/*    position: fixed;*/
+/*    left: 0px;*/
+/*    bottom: 0px;*/
+/*    width: 26vw;*/
+/*    z-index: -1;*/
+/*}*/
 
 </style>

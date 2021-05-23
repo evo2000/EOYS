@@ -2,14 +2,16 @@
 
     <!-- switching to bootstrap container -->
 <!--  <div class="main-contain">-->
-    <div class="container-fluid d-flex flex-column justify-content-center">
+    <div class="container-fluid">
 <!--        <div class="logo">-->
         <img class="logo d-block mx-auto" src="/images/logo-splash.svg">
 <!--        </div>-->
 <!--        <div class="curve">-->
 <!--        </div>-->
     </div>
-    <img class="curve" src="/images/HOME.svg">
+
+    <!-- this will be moved into the background component -->
+<!--    <img class="curve" src="/images/HOME.svg">-->
 
 </template>
 
@@ -37,14 +39,17 @@ export default defineComponent({
 
 .logo {
     width: 100%;
+
+    /* full width may be too wide on very large screens */
     max-width: 1600px;
 }
 
-.curve {
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    height: 80vh;
-    z-index: -1;
-}
+/* this will be moved into the background component*/
+/*.curve {*/
+/*    position: absolute;*/
+/*    right: 0px;*/
+/*    bottom: 0px;*/
+/*    height: 80vh;*/
+/*    z-index: -1;*/
+/*}*/
 </style>
