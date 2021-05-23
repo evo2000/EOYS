@@ -18,6 +18,13 @@
     components: {
       WebsiteHeader
     },
+
+    data() {
+      return {
+        initialLoad: true,
+      };
+    },
+
     computed: {
 
       // will return one of ['splash', 'projects', 'about', 'other']
@@ -47,12 +54,14 @@
         } else {
           document.body.classList.remove('splash');
         }
-        document.body.classList.backgroundColor = this.currentPage === 'splash'
-            ? '#eaded6 !important' : 'white !important';
 
-        console.log(document.body);
-        console.log(this.currentPage);
-        console.log(document.body.style.backgroundColor);
+        // only animate bg after initial page load
+        if (this.initialLoad) {
+          setTimeout(() => {
+            document.body.classList.add('animated-bg');
+          }, 10);
+          this.initialLoad = false;
+        }
 
         return "";
       }
@@ -69,7 +78,10 @@
         /* default font for text */
         font-family: "Libre Baskerville", serif !important;
 
-        /* animate background color */
+    }
+
+    /* animate background color -- only want to set this after initial load */
+    body.animated-bg {
         transition: background-color 0.5s;
     }
 
