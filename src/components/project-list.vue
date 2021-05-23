@@ -37,30 +37,14 @@
                             </div>
                         </li>
 
-                        <li class="list-group-item pt-3"
+                        <!-- show abstract (only on large screens) -->
+                        <li class="list-group-item pt-3 d-none d-md-block"
                             v-if="currentProject !== null">
-<!--                            <div v-if="currentProject === null">-->
-<!--                                <p>Hover over project to view abstract</p>-->
-<!--                            </div>-->
-
-<!--                            <div v-if="currentProject !== null">-->
                                 <h3>{{currentProject.title}}</h3>
                                 <p>{{currentProject.abstract}}</p>
-<!--                            </div>-->
                         </li>
                     </ul>
                 </div>
-
-                <!-- project abstract (only on large screens) -->
-<!--                <div class="d-none d-md-block mt-4">-->
-
-<!--                    <div class="card" v-if="currentProject !== null">-->
-<!--                        <div class="card-body">-->
-<!--                            <h3>{{currentProject.title}}</h3>-->
-<!--                            <p>{{currentProject.abstract}}</p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
             </div>
 
             <!-- project list -->
