@@ -16,7 +16,7 @@
                                       v-for="tag of tags"
                                       :key="tag.name"
                                       :class="{'selected-tag': tag.selected}"
-                                      @click="tag.selected = !tag.selected">
+                                      @click="toggleTag(tag)">
                                     {{tag.name}}
                                 </span>
 
@@ -26,6 +26,8 @@
                                            style="font-size:small !important;"
                                            type="text"
                                            placeholder=""
+                                           @keydown.enter="setSearch()"
+                                           @blur="setSearch()"
                                            v-model="search" />
                                 </div>
 
@@ -37,30 +39,14 @@
                             </div>
                         </li>
 
-                        <li class="list-group-item pt-3"
+                        <!-- show abstract (only on large screens) -->
+                        <li class="list-group-item pt-3 d-none d-md-block"
                             v-if="currentProject !== null">
-<!--                            <div v-if="currentProject === null">-->
-<!--                                <p>Hover over project to view abstract</p>-->
-<!--                            </div>-->
-
-<!--                            <div v-if="currentProject !== null">-->
                                 <h3>{{currentProject.title}}</h3>
                                 <p>{{currentProject.abstract}}</p>
-<!--                            </div>-->
                         </li>
                     </ul>
                 </div>
-
-                <!-- project abstract (only on large screens) -->
-<!--                <div class="d-none d-md-block mt-4">-->
-
-<!--                    <div class="card" v-if="currentProject !== null">-->
-<!--                        <div class="card-body">-->
-<!--                            <h3>{{currentProject.title}}</h3>-->
-<!--                            <p>{{currentProject.abstract}}</p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
             </div>
 
             <!-- project list -->
@@ -111,10 +97,52 @@
           tagNames.add(tag);
         }
       }
-      this.tags = [...tagNames].map(name => ({name: name, selected: false}));
+
+      // get query tags and search from url
+      const queryTags = new Set((this.$route.query.tags || "").split(","));
+      const querySearch = this.$route.query.q || "";
+
+      this.tags = [...tagNames].map(name => ({
+        name: name,
+        selected: queryTags.has(name)
+      }));
+
+      this.search = querySearch;
+    },
+
+    methods: {
+      // called on blur to avoid polluting the history
+      setSearch() {
+        this.$router.push({
+          path: "/projects",
+          query: this.queryParams
+        });
+      },
+
+      // is called on every tag change
+      toggleTag(tag) {
+        tag.selected = !tag.selected;
+
+        this.$router.push({
+          path: "/projects",
+          query: this.queryParams
+        });
+      }
     },
 
     computed: {
+
+      // current query params
+      queryParams() {
+        const query = {};
+        if (this.search) {
+          query.q = this.search;
+        }
+        if (this.filterTags) {
+          query.tags = this.filterTags;
+        }
+        return query;
+      },
 
       // current tags
       filterTags() {
