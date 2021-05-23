@@ -48,6 +48,10 @@
         text-decoration: none;
     }
 
+    nav a:hover {
+        text-decoration: underline;
+    }
+
     nav .act a {
         font-weight: bold;
     }

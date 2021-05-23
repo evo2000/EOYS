@@ -1,7 +1,9 @@
 <template>
 
+	<page-not-found v-if="projectNotFound" />
+
 <!--	<div class="container-fluid">-->
-	<div class="container">
+	<div class="container" v-if="!projectNotFound">
         <!-- project title -->
 		<h3><em>{{project.title}}</em></h3>
 		<h5>{{project.authors}}</h5>
@@ -49,12 +51,18 @@
 <script>
 import projectsJson from '../projects.json';
 import {defineComponent} from 'vue';
+import PageNotFound from './page-not-found.vue';
 
 export default defineComponent({
 	name: 'project',
 
+	components: {
+		PageNotFound,
+	},
+
 	data() {
 		return {
+			projectNotFound: false,
 			project: {
 				authors: '',
 				title: '',
@@ -68,6 +76,14 @@ export default defineComponent({
 
 	created() {
 		const projectid = parseInt(this.$route.params.projectid);
+
+		// error handling
+		if (isNaN(projectid)
+				|| projectid < 0
+				|| projectid >= projectsJson.length) {
+			this.projectNotFound = true;
+		}
+
 		this.project = projectsJson[projectid];
 	},
 })
