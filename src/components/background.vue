@@ -66,7 +66,7 @@
 <style>
     /* animate background color -- only want to set this after initial load */
     body.animated-bg {
-        transition: background-color 0.5s;
+        transition: background-color 0.7s;
     }
 
     /* background color on splash page only, white otherwise */
@@ -78,7 +78,7 @@
         position: fixed;
         z-index: -1;
 
-        transition: opacity 0.5s;
+        transition: opacity 0.7s;
         opacity: 0;
     }
 

@@ -6,11 +6,11 @@
 
         <!-- project abstract and images -->
         <div class="row">
-			<div class="pt-3 col-12 col-md-7">
+			<div class="pt-3 col-12 col-md-10">
 				<!-- project title -->
 				<h3><em>{{project.title}}</em></h3>
 				<h5>{{project.authors}}</h5>
-				<p>
+				<p class="small">
 					Tagged:
 					<router-link v-for="tag of project.tags"
 								 class="d-inline-block pe-2"
@@ -18,9 +18,19 @@
 						{{tag}}
 					</router-link>
 				</p>
+			</div>
+		</div>
 
+		<div class="row mt-5">
+			<div class="pt-3 col-12 col-md-7">
 				<h5>Abstract</h5>
 				<p>{{project.abstract}}</p>
+
+				<!-- on desktop, full description follows right after abstract -->
+				<div class="d-none d-md-block">
+					<h5 class="pt-4">Full Description</h5>
+					<p>{{project.desc}}</p>
+				</div>
 			</div>
 			<div class="pt-3 col-12 col-md-5 pl-md-4">
 				<a :href="project.img"
@@ -31,7 +41,8 @@
 			</div>
 		</div>
 
-        <div class="row">
+        <!-- on mobile, full description comes after images -->
+        <div class="row d-md-none">
 			<div class="pt-4 col-12 col-md-7">
 				<h5 class="pt-4">Full Description</h5>
 				<p>{{project.desc}}</p>

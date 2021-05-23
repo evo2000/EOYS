@@ -6,11 +6,12 @@
 
             <!-- controls and filter -->
             <div class="col-12 col-md-6 col-lg-4 order-md-2">
-                <div class="card">
-                    <div class="card-body">
+                <div class="card small">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item py-3">
                             <!-- filters and sort controls -->
                             <div class="controls">
-                                <p class="mb-0">Filter by tags</p>
+                                <p class="mb-0">Filter projects by tags</p>
                                 <span class="tag badge d-inline-block me-1"
                                       v-for="tag of tags"
                                       :key="tag.name"
@@ -19,35 +20,47 @@
                                     {{tag.name}}
                                 </span>
 
-                                <p class="mt-3 mb-0">Search projects</p>
+                                <p class="mt-4 mb-0">Search projects</p>
                                 <div class="search-contain">
                                     <input class="search form-control"
+                                           style="font-size:small !important;"
                                            type="text"
                                            placeholder=""
                                            v-model="search" />
                                 </div>
 
                                 <!-- show current filters -->
-                                <small v-if="currentFilters" class="form-text text-secondary">
+                                <p v-if="currentFilters"
+                                   class="form-text text-secondary small mb-0">
                                     current filters: {{currentFilters}}
-                                </small>
+                                </p>
                             </div>
-                    </div>
+                        </li>
+
+                        <li class="list-group-item pt-3"
+                            v-if="currentProject !== null">
+<!--                            <div v-if="currentProject === null">-->
+<!--                                <p>Hover over project to view abstract</p>-->
+<!--                            </div>-->
+
+<!--                            <div v-if="currentProject !== null">-->
+                                <h3>{{currentProject.title}}</h3>
+                                <p>{{currentProject.abstract}}</p>
+<!--                            </div>-->
+                        </li>
+                    </ul>
                 </div>
 
                 <!-- project abstract (only on large screens) -->
-                <div class="d-none d-md-block mt-4">
-                    <div v-if="currentProject === null">
-                        <p>Hover over a project to preview its abstract.</p>
-                    </div>
+<!--                <div class="d-none d-md-block mt-4">-->
 
-                    <div class="card" v-if="currentProject !== null">
-                        <div class="card-body">
-                            <h3>{{currentProject.title}}</h3>
-                            <p>{{currentProject.abstract}}</p>
-                        </div>
-                    </div>
-                </div>
+<!--                    <div class="card" v-if="currentProject !== null">-->
+<!--                        <div class="card-body">-->
+<!--                            <h3>{{currentProject.title}}</h3>-->
+<!--                            <p>{{currentProject.abstract}}</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
             </div>
 
             <!-- project list -->
