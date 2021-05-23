@@ -16,7 +16,7 @@
                                       v-for="tag of tags"
                                       :key="tag.name"
                                       :class="{'selected-tag': tag.selected}"
-                                      @click="tag.selected = !tag.selected">
+                                      @click="toggleTag(tag)">
                                     {{tag.name}}
                                 </span>
 
@@ -26,6 +26,8 @@
                                            style="font-size:small !important;"
                                            type="text"
                                            placeholder=""
+                                           @keydown.enter="setSearch()"
+                                           @blur="setSearch()"
                                            v-model="search" />
                                 </div>
 
@@ -95,10 +97,52 @@
           tagNames.add(tag);
         }
       }
-      this.tags = [...tagNames].map(name => ({name: name, selected: false}));
+
+      // get query tags and search from url
+      const queryTags = new Set((this.$route.query.tags || "").split(","));
+      const querySearch = this.$route.query.q || "";
+
+      this.tags = [...tagNames].map(name => ({
+        name: name,
+        selected: queryTags.has(name)
+      }));
+
+      this.search = querySearch;
+    },
+
+    methods: {
+      // called on blur to avoid polluting the history
+      setSearch() {
+        this.$router.push({
+          path: "/projects",
+          query: this.queryParams
+        });
+      },
+
+      // is called on every tag change
+      toggleTag(tag) {
+        tag.selected = !tag.selected;
+
+        this.$router.push({
+          path: "/projects",
+          query: this.queryParams
+        });
+      }
     },
 
     computed: {
+
+      // current query params
+      queryParams() {
+        const query = {};
+        if (this.search) {
+          query.q = this.search;
+        }
+        if (this.filterTags) {
+          query.tags = this.filterTags;
+        }
+        return query;
+      },
 
       // current tags
       filterTags() {
