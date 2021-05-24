@@ -7,6 +7,10 @@ import ProjectList from './components/project-list.vue';
 import PageNotFound from './components/page-not-found.vue';
 import {createRouter, createWebHistory} from 'vue-router';
 
+// import bootstrap
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap";
+
 let routes = [
 	{path: '/', component: Splash},
 	{path: '/about', component: About},

@@ -1,61 +1,22 @@
 <template>
-
-  <div class="main-contain">
-    <div class="logo">
-      <img src="/images/logo-splash.svg">
-    </div>    
-    <div class="curve">
-      <img src="/images/HOME.svg">
+    <div class="container-fluid">
+        <img class="logo d-block mx-auto" src="/images/logo-splash.svg">
     </div>
-  </div>
-
-<bg/>
-
 </template>
 
 <script>
-import projectsJson from '../projects.json';
-import bg from './bg.vue';
-import {defineComponent} from 'vue';
+  import {defineComponent} from 'vue';
 
-export default defineComponent({
-	name: 'HelloWorld',
-
-	components: {
-    bg
-	},
-
-	data() {
-    return {
-      projects: []
-    };
-	},
-
-	created() {
-		this.projects = projectsJson;
-	},
-})
+  export default defineComponent({
+    name: 'Splash',
+  })
 </script>
 
 <style scoped>
+    .logo {
+        width: 100%;
 
-*{
-    margin: 0px;
-    padding: 0px;
-}
-
-.logo img{
-    display: block;
-    margin: auto;
-    padding-top: 14vh;
-    width: 80vw;
-}
-
-.curve img{
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    height: 80vh;
-    z-index: -1;
-}
+        /* full width may be too wide on very large screens */
+        max-width: 1600px;
+    }
 </style>

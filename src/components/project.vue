@@ -1,119 +1,104 @@
 <template>
 
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-3"></div>
-			<div class="col-7">
-				<h1>{{project.name}}<i>{{project.title}}</i></h1>
+	<page-not-found v-if="projectNotFound" />
+
+	<div class="container" v-if="!projectNotFound">
+
+        <!-- project abstract and images -->
+        <div class="row">
+			<div class="pt-3 col-12 col-md-10">
+				<!-- project title -->
+				<h3><em>{{project.title}}</em></h3>
+				<h5>{{project.authors}}</h5>
+				<p class="small">
+					Tagged:
+					<router-link v-for="tag of project.tags"
+								 class="d-inline-block pe-2"
+								 :to="'/projects?tags=' + tag">
+						{{tag}}
+					</router-link>
+				</p>
 			</div>
-			<div class="col-2"></div>
 		</div>
-		<div class="row">
-			<div class="col-3"></div>
-			<div class="col-4">
-				<p>{{project.desc}}</p>
+
+		<div class="row mt-5">
+			<div class="pt-3 col-12 col-md-7">
+				<h5>Abstract</h5>
+				<p>{{project.abstract}}</p>
+
+				<!-- on desktop, full description follows right after abstract -->
+				<div class="d-none d-md-block">
+					<h5 class="pt-4">Full Description</h5>
+					<p>{{project.desc}}</p>
+				</div>
 			</div>
-			<div class="col-3 media">
-				<a :href='project.img' data-lightbox="img">
-					<img :src='project.img'/>
+			<div class="pt-3 col-12 col-md-5 pl-md-4">
+				<a :href="project.img"
+				   data-lightbox="project-image">
+					<img :src="project.img"
+						 class="project-image w-100">
 				</a>
 			</div>
-			<div class="col-2"></div>
 		</div>
-	</div>
 
-	<div class="curve1">
-		<img src="/images/STUDENT_PROJECT.svg">
-	</div>
-	<div class="curve2">
-        <img src="/images/ABOUT-bottom.svg">
-    </div>
+        <!-- on mobile, full description comes after images -->
+        <div class="row d-md-none">
+			<div class="pt-4 col-12 col-md-7">
+				<h5 class="pt-4">Full Description</h5>
+				<p>{{project.desc}}</p>
+			</div>
+		</div>
 
-	<bg/>
+		<p class="pt-4 pb-5">
+			<router-link to="/projects">Return to projects list.</router-link>
+		</p>
+	</div>
 
 </template>
 
 <script>
 import projectsJson from '../projects.json';
-import bg from './bg.vue';
 import {defineComponent} from 'vue';
+import PageNotFound from './page-not-found.vue';
 
 export default defineComponent({
 	name: 'project',
 
 	components: {
-		bg
+		PageNotFound,
 	},
 
 	data() {
 		return {
+			projectNotFound: false,
 			project: {
+				authors: '',
+				title: '',
+				abstract: '',
 				desc: '',
 				img: '',
-				name: '',
+				tags: []
 			}
 		};
 	},
 
 	created() {
 		const projectid = parseInt(this.$route.params.projectid);
+
+		// error handling
+		if (isNaN(projectid)
+				|| projectid < 0
+				|| projectid >= projectsJson.length) {
+			this.projectNotFound = true;
+		}
+
 		this.project = projectsJson[projectid];
 	},
 })
 </script>
 
 <style scoped>
-
-*{
-	margin: 0px;
-	padding: 0px;
-}
-
-.container-fluid{
-	color: #c14e0e;
-	margin: 0px 0px 80px 0px;
-}
-
-.container-fluid h1{
-	font-family: 'DM Serif Text', serif;
-	font-weight: normal;
-	margin: 70px 0px 0px 0px;
-}
-
-.container-fluid p{
-	font-family: 'Libre Baskerville', serif;
-	font-size: 14px;
-	weight:400;
-	stretch:100;
-	text-align: justify;
-	text-justify: inter-word;
-	margin: 40px 40px 0px 0px;
-}
-
-.media img{
-	border: 2px solid #c14e0e;
-	width: 100%;
-	margin: 40px 0px 0px 0px;
-}
-
-.curve1 img{
-	margin: 0px;
-	padding: 0px;
-    position: fixed;
-    right: 0px;
-    top: 0px;
-    height: 130vh;
-    z-index: -1;
-}
-
-.curve2 img{
-	margin: 0px;
-	padding: 0px;
-    position: fixed;
-    left: 0px;
-    bottom: 0px;
-    width: 26vw;
-    z-index: -1;
-}
-
+	.project-image {
+		border: 2px solid #c14e0e;
+	}
 </style>
