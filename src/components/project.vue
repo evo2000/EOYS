@@ -10,6 +10,9 @@
 				<!-- project title -->
 				<h3><em>{{project.title}}</em></h3>
 				<h5>{{project.authors}}</h5>
+				<div v-if="project.advisors">
+					<h6>Faculty Advisor: {{project.advisors}}</h6>
+				</div>
 				<p class="small">
 					Tagged:
 					<router-link v-for="tag of project.tags"
@@ -33,11 +36,11 @@
 				</div>
 			</div>
 			<div class="pt-3 col-12 col-md-5 pl-md-4">
-				<a :href="project.img"
-				   data-lightbox="project-image">
-					<img :src="project.img"
-						 class="project-image w-100">
-				</a>
+				<div v-for="item in project.img">
+					<a :href="item" data-lightbox="project-image">
+						<img :src="item" class="project-image w-100">
+					</a>
+				</div>
 			</div>
 		</div>
 
@@ -72,12 +75,13 @@ export default defineComponent({
 		return {
 			projectNotFound: false,
 			project: {
-				authors: '',
 				title: '',
+				authors: '',
+				advisors: '',
+				tags: [],
 				abstract: '',
 				desc: '',
-				img: '',
-				tags: []
+				img: []
 			}
 		};
 	},
@@ -100,5 +104,6 @@ export default defineComponent({
 <style scoped>
 	.project-image {
 		border: 2px solid #c14e0e;
+		margin-bottom: 40px;
 	}
 </style>
