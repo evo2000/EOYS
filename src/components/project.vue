@@ -33,6 +33,9 @@
 				<div class="d-none d-md-block">
 					<h5>Abstract</h5>
 					<p>{{project.abstract}}</p>
+					<div v-if="project.website">
+					<a :href="project.website">Project Website</a>
+				</div>
 				</div>
 			</div>
 			<div class="pt-3 col-12 col-md-5 pl-md-4">
@@ -52,6 +55,9 @@
 			<div class="pt-4 col-12 col-md-7">
 				<h5 class="pt-4">Abstract</h5>
 				<p>{{project.abstract}}</p>
+				<div v-if="project.website">
+					<a :href="project.website">Project Website</a>
+				</div>
 			</div>
 		</div>
 
@@ -85,7 +91,8 @@ export default defineComponent({
 				abstract: '',
 				desc: '',
 				img: [],
-				vid: []
+				vid: [],
+				website: ''
 			}
 		};
 	},
