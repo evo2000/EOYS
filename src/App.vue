@@ -6,8 +6,8 @@
     <!-- body -->
     <router-view />
 
-    <!-- footer -->
-    <!-- TODO -->
+    <!-- footer TODO-->
+    <website-footer :currentPage="currentPage" />
 
     <!-- background curves and color -->
     <background :currentPage="currentPage" />
@@ -17,11 +17,13 @@
 <script>
   import {defineComponent} from 'vue';
   import WebsiteHeader from './components/website-header.vue';
+  import WebsiteFooter from './components/website-footer.vue';
   import Background from './components/background.vue';
   export default defineComponent({
     name: 'App',
     components: {
       WebsiteHeader,
+      WebsiteFooter,
       Background
     },
 
