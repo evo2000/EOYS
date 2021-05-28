@@ -26,13 +26,13 @@
 
 		<div class="row mt-5">
 			<div class="pt-3 col-12 col-md-7">
-				<h5>Abstract</h5>
-				<p>{{project.abstract}}</p>
+				<!--<h5>Abstract</h5>
+				<p>{{project.abstract}}</p>-->
 
 				<!-- on desktop, full description follows right after abstract -->
 				<div class="d-none d-md-block">
-					<h5 class="pt-4">Full Description</h5>
-					<p>{{project.desc}}</p>
+					<h5>Abstract</h5>
+					<p>{{project.abstract}}</p>
 				</div>
 			</div>
 			<div class="pt-3 col-12 col-md-5 pl-md-4">
@@ -50,8 +50,8 @@
         <!-- on mobile, full description comes after images -->
         <div class="row d-md-none">
 			<div class="pt-4 col-12 col-md-7">
-				<h5 class="pt-4">Full Description</h5>
-				<p>{{project.desc}}</p>
+				<h5 class="pt-4">Abstract</h5>
+				<p>{{project.abstract}}</p>
 			</div>
 		</div>
 

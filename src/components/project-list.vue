@@ -43,7 +43,7 @@
                         <li class="list-group-item pt-3 d-none d-md-block"
                             v-if="currentProject !== null">
                                 <h3>{{currentProject.title}}</h3>
-                                <p>{{currentProject.abstract}}</p>
+                                <p>{{currentProject.desc}}</p>
                         </li>
                     </ul>
                 </div>
