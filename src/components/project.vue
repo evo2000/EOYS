@@ -11,7 +11,7 @@
 				<h3><em>{{project.title}}</em></h3>
 				<h5>{{project.authors}}</h5>
 				<div v-if="project.advisors">
-					<h6>Faculty Advisor: {{project.advisors}}</h6>
+					<h6>{{project.advisors}}</h6>
 				</div>
 				<p class="small">
 					Tagged:

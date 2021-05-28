@@ -1,14 +1,15 @@
 [
 	{
-		"title": "How Legislators (Don't) Use Data to Make Decisions: Green Building Laws in South Dakota",
-		"authors": ["Jenna Scott"],
-		"advisors": "Beth Slack",
-		"tags": ["Technology", "Sustainability"],
-		"desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget cursus ligula, non ornare velit. Integer tristique mauris ex, nec sodales dui porta venenatis. Fusce ac ipsum erat. Suspendisse dignissim et sem at ultricies.",
-		"abstract": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget cursus ligula, non ornare velit. Integer tristique mauris ex, nec sodales dui porta venenatis. Fusce ac ipsum erat. Suspendisse dignissim et sem at ultricies. Sed tempor turpis dolor, a accumsan odio lobortis ut. Praesent feugiat tristique tortor. Morbi molestie eu mauris sed fringilla. Morbi rutrum cursus lectus vel blandit. Integer pellentesque imperdiet ex, ac consectetur justo viverra vitae. Aliquam ipsum ante, posuere eget dignissim ut, gravida a lacus. Praesent nec tortor diam. Fusce cursus et lectus at ultricies. Morbi a diam sem. Pellentesque nec fringilla lacus. Morbi imperdiet ex vitae orci semper, ac sodales dui egestas. Proin feugiat semper eleifend. Phasellus vestibulum quis nisi eget semper. Donec et vestibulum leo, vel dictum sem. Nullam hendrerit libero nec mi auctor, in porta justo viverra. Duis vitae cursus sem. Etiam quis tempus lacus, in rhoncus sapien. Donec dapibus risus erat, tincidunt venenatis dui dignissim ac. Fusce quis ante facilisis, consequat elit et, luctus lectus. ",
+		"title": "Producing Biochar from Amazon Boxes",
+		"authors": "Renata Ashapatov ChE'23, Tiffany Cheung ChE'22, Eric Figueroa ChE'21, Lionel Gilliar-Shoenenberger CE'23, Sanjna Rao ChE'22,  Seemee Seon ChE'22, Delphine Troast ChE'21 & Yu Xu ChE'21",
+		"advisors": "Faculty Advisor: Professor Amanda Simson",
+		"tags": ["Sustainability", "Social Good", "Interdisciplinary"],
+		"desc": "A group of eight Cooper students investigated whether they could make a valuable product and carbon sequestration tool from cardboard boxes in the context of increased online shopping during the COVID-19 pandemic.",
+		"abstract": "This project is a collection of work by students looking into the viability of turning cardboard into a valuable product - biochar - as both a waste management tool and a method for reducing carbon emissions. The project includes a techno-economic assessment of managing our cardboard waste via biochar-production (pyrolysis) vs landfilling or recycling; a small pyrolysis reactor design to produce biochar from cardboard; and laboratory scale experiments studying the pyrolysis process that can produce biochar from cardboard. Biochar was successfully produced on both the laboratory and pilot scale, and was found to have similar characteristics to that produced from more typical waste feedstocks.",
 		"img": [
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Cooper_Union_-_Cooper_Union_Academic_Building_%2848072701728%29.jpg/220px-Cooper_Union_-_Cooper_Union_Academic_Building_%2848072701728%29.jpg",
-			"https://www.invent.org/sites/default/files/styles/inductee_detail_media/public/inductees/258-master_0.jpg"
+			"https://drive.google.com/uc?export=view&id=1-hz29JjWanGgYxBAVS7kg-99_T1qxQAO",
+			"https://drive.google.com/uc?export=view&id=12t3fGJ94bm9GqiP_2Cew5pkrr2Zk3PWr",
+			"https://drive.google.com/uc?export=view&id=1Tp2_6_baDNVt0ob9e6PpjIHvX8xQjuUG"
 		]
 	},
 	{
