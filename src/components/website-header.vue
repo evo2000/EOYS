@@ -44,6 +44,7 @@
         font-family: inherit;
         color: inherit;
         text-decoration: none;
+        margin-top: 12px;
     }
 
     nav a:hover {
