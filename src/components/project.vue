@@ -8,8 +8,8 @@
         <div class="row">
 			<div class="pt-3 col-12 col-md-10">
 				<!-- project title -->
-				<h3><em>{{project.title}}</em></h3>
-				<h5>{{project.authors}}</h5>
+				<h3>{{project.title}}</h3>
+				<h5><em>{{project.authors_detail}}</em></h5>
 				<div v-if="project.advisors">
 					<h6>{{project.advisors}}</h6>
 				</div>
@@ -86,6 +86,7 @@ export default defineComponent({
 			project: {
 				title: '',
 				authors: '',
+				authors_detail: '',
 				advisors: '',
 				tags: [],
 				abstract: '',

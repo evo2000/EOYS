@@ -65,7 +65,7 @@
                                  @mouseleave="currentProject = currentProject.title === project.title ? null : currentProject"
                                  :to="'/projects/' + id">
 
-                        {{project.authors}} &mdash; <em>{{project.title}}</em>
+                        {{project.title}} &mdash; <em>{{project.authors}}</em>
                     </router-link>
                 </ul>
             </div>
