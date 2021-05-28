@@ -36,6 +36,9 @@
 				</div>
 			</div>
 			<div class="pt-3 col-12 col-md-5 pl-md-4">
+				<div v-for="item in project.vid" class="vid">
+					<iframe width="100%" height="300" :src="item" title="video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
 				<div v-for="item in project.img">
 					<a :href="item" data-lightbox="project-image">
 						<img :src="item" class="project-image w-100">
@@ -81,7 +84,8 @@ export default defineComponent({
 				tags: [],
 				abstract: '',
 				desc: '',
-				img: []
+				img: [],
+				vid: []
 			}
 		};
 	},
