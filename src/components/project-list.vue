@@ -77,6 +77,8 @@
   import projectsJson from '../projects.json';
   import {defineComponent} from 'vue';
 
+  projectsJson.sort((p1, p2) => p1.title.localeCompare(p2.title));
+
   export default defineComponent({
     name: 'ProjectList',
 
