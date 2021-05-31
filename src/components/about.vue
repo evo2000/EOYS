@@ -13,7 +13,7 @@
 			<img class="signature pt-3 me-5" src="/images/signature.png">
 		</div>
 		<div class="d-flex justify-content-end">
-			<p class="dean pt-3">Barry L. Shoop | Dean of Engineering | Albert Nerken School of Engineering</p>
+			<p class="dean pt-5">Barry L. Shoop, Dean of Albert Nerken School of Engineering</p>
 		</div>
 
 		<h1 class="pt-5">The Graphics Team</h1>
