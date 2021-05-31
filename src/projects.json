@@ -28,7 +28,8 @@
 		"advisors": "Faculty Advisor: Professor Robert Topper",
 		"tags": ["Tech", "Interdisciplinary"],
 		"desc": "Mag-walking is a refinement on traditional Metropolis Monte Carlo algorithms which enables a more ergodic walk with a higher probability of crossing potential barriers, which speeds up simulations.",
-		"abstract": "In chemistry, it is common to perform computations to determine averages according to the Boltzmann distribution. Therefore, computational simulations such as Metropolis Monte Carlo algorithms need to sample accordingly, but at low temperatures, the “walker” often gets trapped in potential wells with no way of overcoming the barrier. Mag-walking is a refinement on this technique in which the Monte Carlo walker has the additional probability of taking a larger step than usual, producing a walk which more closely resembles expected sampling behavior given by the Boltzmann distribution."
+		"abstract": "In chemistry, it is common to perform computations to determine averages according to the Boltzmann distribution. Therefore, computational simulations such as Metropolis Monte Carlo algorithms need to sample accordingly, but at low temperatures, the “walker” often gets trapped in potential wells with no way of overcoming the barrier. Mag-walking is a refinement on this technique in which the Monte Carlo walker has the additional probability of taking a larger step than usual, producing a walk which more closely resembles expected sampling behavior given by the Boltzmann distribution.",
+		"img": ["https://drive.google.com/uc?export=view&id=1hl5P0vZ6I7P741I95TXENdqijekCIEEQ"]
 	},
 	{
 		"title": "Hot Pot",
