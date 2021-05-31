@@ -220,6 +220,10 @@
         color: inherit !important;
     }
 
+    .list-group{
+      padding-bottom: 80px;
+    }
+
     .list-group-item.active {
         background-color: #c14e0e;
         border-color: #c14e0e;
