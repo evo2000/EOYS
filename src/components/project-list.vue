@@ -223,7 +223,7 @@
     }
 
     .list-group{
-      padding-bottom: 80px;
+      padding-bottom: 20px;
     }
 
     .list-group-item.active {

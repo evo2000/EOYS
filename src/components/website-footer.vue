@@ -1,7 +1,7 @@
 <template>
     <div class="footer col-12 col-md-12 d-flex justify-content-center ">
         <div v-if="currentPage !== 'splash'">
-            <!-- <p><a href="http://cooper.edu/welcome">The Cooper Union for the Advancement of Science and Art</a> Ⓒ 2021, All Rights Reserved.</p> -->
+            <p><a href="http://cooper.edu/welcome">The Cooper Union for the Advancement of Science and Art</a> Ⓒ 2021, All Rights Reserved.</p>
         </div>
     </div>
 </template>
@@ -19,9 +19,10 @@
 </script>
 
 <style scoped>
-    .footer p{
+    .footer{
         font-size: 12px;
-        position: absolute;
-        bottom: 0;
+        width: 80%;
+        padding: 40px 0px 40px 0px;
+        margin: auto;
     }
 </style>
