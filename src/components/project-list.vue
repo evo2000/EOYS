@@ -6,7 +6,7 @@
 
             <!-- controls and filter -->
             <div class="col-12 col-md-6 col-lg-4 order-md-2">
-                <div class="card small">
+                <div class="card small position-sticky" style="top: 1em;">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item py-3">
                             <!-- filters and sort controls -->
