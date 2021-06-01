@@ -6,7 +6,7 @@
 		<h1>Message from The Dean</h1>
 		<p class="pt-3">Welcome to the 2021 Albert Nerken School of Engineering End of Year Show. It has been an incredibly challenging academic year but both our faculty and students have risen to the occasion in true Cooper style. The End of Year Show exhibition showcases and celebrates the amazing collaborative work of our faculty and students. Some themes in this year’s show include projects at the intersection of engineering and healthcare, designs that improve sustainable solutions to local and global problems, and the applications of machine learning and artificial intelligence to benefit humanity and society, among others. I invite you to explore this year’s virtual exhibition and witness for yourself the exceptional results of our talented students.</p>
 		<p class="pt-3">Special thanks to Dayi Novas, Evan Murphy, Jonathan Lam, Lionel Gilliar-Schoenenberger, Beth Slack and Nori Perez for the artistic design, curation and digital presentation of this year’s End of Year Show.</p>
-		<p class="pt-3">The End of Year Show is a Cooper Union campus-wide event. Please also visit the <a href="http://endofyearshow2021.cooper.edu/"><b>Art School</b></a> and <a href="#"><b>Architecture School</b></a>’s virtual shows as well.</p>
+		<p class="pt-3">The End of Year Show is a Cooper Union campus-wide event. Please also visit the <a href="http://endofyearshow2021.cooper.edu/"><b>Art School</b></a> and <a href="https://archeoys2021.cooper.edu/"><b>Architecture School</b></a>’s virtual shows as well.</p>
 
 		<!-- signature align right -->
 		<div class="d-flex justify-content-end">
