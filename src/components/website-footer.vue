@@ -24,5 +24,6 @@
         width: 80%;
         padding: 40px 0px 40px 0px;
         margin: auto;
+        text-align: center;
     }
 </style>

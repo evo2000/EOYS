@@ -19,8 +19,23 @@
 			<p>Albert Nerken School of Engineering, The Cooper Union</p>
 		</div>
 
-		<h1 class="pt-5">The Graphics Team</h1>
-		<p class="pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a molestie orci. Vestibulum ut tincidunt nisl, ac dignissim elit. Maecenas non nibh molestie, vehicula est et, pretium orci. Aliquam erat volutpat. Sed dictum lorem sed ligula fringilla dapibus. Donec sit amet metus ipsum. Suspendisse tempor malesuada eros in tincidunt. Praesent eleifend mollis tellus non tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus venenatis neque id lorem elementum, nec gravida libero facilisis. Nam nec nibh sodales, euismod lectus in, pharetra metus. Maecenas dignissim vulputate nisi. Suspendisse potenti. Morbi maximus turpis eget tortor semper sollicitudin. Curabitur tincidunt erat at interdum volutpat. Pellentesque commodo dui sem, quis maximus nibh ornare lacinia.</p>
+		<h1 class="pt-5">The Design Team</h1>
+
+		<h3 class="pt-3">Dayi Novas</h3>
+		<h5><i>Artistic Director</i></h5>
+		<p>Dayi graduated from The Cooper Union in 2020 and has been designing books, typefaces, websites, branding & identity, etc. She has worked on projects for Alexandria Ocasio Cortez, HBO, Sacha Baron Cohen, Sean King, Mike Cloud, Julie Harris &mdash; but most of the time, thankfully, she works as a tattoo artist in her studio in Brooklyn. Find her work <a href="http://novasdayi.com/">here</a>.</p>
+
+		<h3 class="pt-3">Evan Murphy</h3>
+		<h5><i>Webmaster</i></h5>
+		<p>bio</p>
+
+		<h3 class="pt-3">Jonathan Lam</h3>
+		<h5><i>Webmaster</i></h5>
+		<p>bio</p>
+
+		<h3 class="pt-3">Lionel Gilliar-Schoenenberger</h3>
+		<h5><i>Head of the EOYS Committee</i></h5>
+		<p>bio</p>
 	</div>
 
 </template>

@@ -54,7 +54,7 @@
                 <ul class="list-group">
                     <ul class="noresult list-group-item"
                         v-if="projectsList.length === 0">
-                        <b>No projects matched the current search filters.</b>
+                        <b>No projects match the current search filters.</b>
                     </ul>
 
                     <router-link v-for="(project, id) of projectsList"
