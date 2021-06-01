@@ -52,9 +52,9 @@
             <!-- project list -->
             <div class="col-12 col-md-6 col-lg-8 pt-3 pt-md-0 order-md-1">
                 <ul class="list-group">
-                    <ul class="list-group-item"
+                    <ul class="noresult list-group-item"
                         v-if="projectsList.length === 0">
-                        No projects matched the current search filters.
+                        <b>No projects matched the current search filters.</b>
                     </ul>
 
                     <router-link v-for="(project, id) of projectsList"
@@ -65,7 +65,7 @@
                                  @mouseleave="currentProject = currentProject.title === project.title ? null : currentProject"
                                  :to="'/projects/' + id">
 
-                        {{project.title}} &mdash; <em>{{project.authors}}</em>
+                        <b>{{project.title}}</b> &mdash; <em>{{project.authors}}</em>
                     </router-link>
                 </ul>
             </div>
@@ -230,5 +230,9 @@
         background-color: #c14e0e;
         border-color: #c14e0e;
         color: white !important;
+    }
+
+    .noresult{
+      color: inherit;
     }
 </style>
