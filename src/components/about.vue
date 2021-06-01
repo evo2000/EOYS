@@ -50,7 +50,7 @@ export default defineComponent({
 
 <style scoped>
 	.signature {
-		max-width: 100%;
 		width: 220px;
+		height: 85px;
 	}
 </style>
