@@ -62,7 +62,7 @@
 		</div>
 
 		<p class="pt-4 pb-5">
-			<router-link to="/projects">Return to projects list.</router-link>
+			<router-link to="/projects">&laquo; Back</router-link>
 		</p>
 	</div>
 

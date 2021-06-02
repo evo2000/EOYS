@@ -5,25 +5,18 @@
 
 		<h1>Message from The Dean</h1>
 		<p class="pt-3">Welcome to the 2021 Albert Nerken School of Engineering End of Year Show. It has been an incredibly challenging academic year but both our faculty and students have risen to the occasion in true Cooper style. The End of Year Show exhibition showcases and celebrates the amazing collaborative work of our faculty and students. Some themes in this year’s show include projects at the intersection of engineering and healthcare, designs that improve sustainable solutions to local and global problems, and the applications of machine learning and artificial intelligence to benefit humanity and society, among others. I invite you to explore this year’s virtual exhibition and witness for yourself the exceptional results of our talented students.</p>
-		<p class="pt-3">Special thanks to Dayi Novas, Evan Murphy, Jonathan Lam, Lionel Gilliar-Schoenenberger, Beth Slack and Nori Perez for the artistic design, curation and digital presentation of this year’s End of Year Show.</p>
-		<p class="pt-3">The End of Year Show is a Cooper Union campus-wide event. Please also visit the <a href="http://endofyearshow2021.cooper.edu/"><b>Art School</b></a> and <a href="https://archeoys2021.cooper.edu/"><b>Architecture School</b></a>’s virtual shows as well.</p>
+		<p>Special thanks to Dayi Novas, Evan Murphy, Jonathan Lam, Lionel Gilliar-Schoenenberger, Beth Slack and Nori Perez for the artistic design, curation and digital presentation of this year’s End of Year Show.</p>
 
-		<!-- signature align right -->
-		<div class="d-flex justify-content-end">
-			<img class="signature pt-3 me-5" src="/images/signature.png">
-		</div>
-		<div class="d-flex justify-content-end">
-			<p class="pt-5">Barry L. Shoop, Dean of Engineering</p>
-		</div>
-		<div class="d-flex justify-content-end">
-			<p>Albert Nerken School of Engineering, The Cooper Union</p>
-		</div>
-
+		<img class="signature pt-3 me-5" src="/images/signature.png">
+		
+		<p class="pt-3">Barry L. Shoop, Dean of Engineering<br><a href="https://cooper.edu/engineering" target="_blank">Albert Nerken School of Engineering</a>, The Cooper Union</p>
+		<p class="pt-5" style="font-size: 15px;"><i><b><a href="https://cooper.edu/events-and-exhibitions/exhibitions/end-year-show-2021" target="_blank">The End of Year Show</a></b> is a Cooper Union campus-wide event. Please also visit shows for the <a href="http://endofyearshow2021.cooper.edu/" target="_blank"><b>School of Art</b></a> and <a href="https://archeoys2021.cooper.edu/" target="_blank"><b>School of Architecture</b></a>.</i></p>
+		
 		<h1 class="pt-5">The Design Team</h1>
 
 		<h3 class="pt-3">Dayi Novas</h3>
 		<h5><i>Artistic Director</i></h5>
-		<p>Dayi graduated from The Cooper Union in 2020 and has been designing books, typefaces, websites, branding & identity, etc. She has worked on projects for Alexandria Ocasio Cortez, HBO, Sacha Baron Cohen, Sean King, Mike Cloud, Julie Harris &mdash; but most of the time, thankfully, she works as a tattoo artist in her studio in Brooklyn. Find her work <a href="http://novasdayi.com/">here</a>.</p>
+		<p>Dayi graduated from The Cooper Union in 2020 and has been designing books, typefaces, websites, branding & identity, etc. She has worked on projects for Alexandria Ocasio Cortez, HBO, Sacha Baron Cohen, Sean King, Mike Cloud, Julie Harris &mdash; but most of the time, thankfully, she works as a tattoo artist in her studio in Brooklyn. Find her work <a href="http://novasdayi.com/" target="_blank">here</a>.</p>
 
 		<h3 class="pt-3">Evan Murphy</h3>
 		<h5><i>Webmaster</i></h5>
@@ -34,7 +27,7 @@
 		<p>bio</p>
 
 		<h3 class="pt-3">Lionel Gilliar-Schoenenberger</h3>
-		<h5><i>Head of the EOYS Committee</i></h5>
+		<h5><i>Student Representative</i></h5>
 		<p>bio</p>
 	</div>
 
