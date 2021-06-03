@@ -10,7 +10,7 @@
 		<img class="signature pt-3 me-5" src="/images/signature.png">
 		
 		<p class="pt-3">Barry L. Shoop, Dean of Engineering<br><a href="https://cooper.edu/engineering" target="_blank">Albert Nerken School of Engineering</a>, The Cooper Union</p>
-		<p class="pt-5" style="font-size: 15px;"><i><b><a href="https://cooper.edu/events-and-exhibitions/exhibitions/end-year-show-2021" target="_blank">The End of Year Show</a></b> is a Cooper Union campus-wide event. Please also visit shows for the <a href="http://endofyearshow2021.cooper.edu/" target="_blank"><b>School of Art</b></a> and <a href="https://archeoys2021.cooper.edu/" target="_blank"><b>School of Architecture</b></a>.</i></p>
+		<p class="pt-5"><i><b><a href="https://cooper.edu/events-and-exhibitions/exhibitions/end-year-show-2021" target="_blank">The End of Year Show</a></b> is a Cooper Union campus-wide event. Please also visit shows for the <a href="http://endofyearshow2021.cooper.edu/" target="_blank"><b>School of Art</b></a> and <a href="https://archeoys2021.cooper.edu/" target="_blank"><b>School of Architecture</b></a>.</i></p>
 		
 		<h1 class="pt-5">The Design Team</h1>
 
