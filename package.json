@@ -8,6 +8,7 @@
     "deploy": "vite build;rm -rf docs;mv dist docs;cp src/CNAME docs;cp docs/index.html docs/404.html"
   },
   "dependencies": {
+    "@popperjs/core": "^2.9.2",
     "@vue/cli": "^4.5.13",
     "bootstrap": "^5.0.1",
     "vue": "^3.0.11",
@@ -16,6 +17,6 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.2.2",
     "@vue/compiler-sfc": "^3.0.5",
-    "vite": "^2.3.3"
+    "vite": "^2.3.6"
   }
 }
