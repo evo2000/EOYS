@@ -26,16 +26,14 @@
 
 		<div class="row mt-5">
 			<div class="pt-3 col-12 col-md-7">
-				<!--<h5>Abstract</h5>
-				<p>{{project.abstract}}</p>-->
 
 				<!-- on desktop, full description follows right after abstract -->
 				<div class="d-none d-md-block">
 					<h5>Abstract</h5>
 					<p>{{project.abstract}}</p>
 					<div v-if="project.website">
-					<a :href="project.website">Project Website</a>
-				</div>
+						<a :href="project.website">Project Website</a>
+					</div>
 				</div>
 			</div>
 			<div class="pt-3 col-12 col-md-5 pl-md-4">

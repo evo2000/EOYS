@@ -14,21 +14,49 @@
 		
 		<h1 class="pt-5">The Design Team</h1>
 
-		<h3 class="pt-3">Dayi Novas</h3>
-		<h5><i>Artistic Director</i></h5>
-		<p>Dayi graduated from The Cooper Union in 2020 and has been designing books, typefaces, websites, branding & identity, etc. She has worked on projects for Alexandria Ocasio Cortez, HBO, Sacha Baron Cohen, Sean King, Mike Cloud, Julie Harris &mdash; but most of the time, thankfully, she works as a tattoo artist in her studio in Brooklyn. Find her work <a href="http://novasdayi.com/" target="_blank">here</a>.</p>
+		<div class="row pt-3">
+			<div class="col-3 d-none d-md-block">
+				<img src="/images/dayi.png" style="width: 100%; border: 2px solid #c14e0e;">
+			</div>
+			<div class="col">
+				<h3>Dayi Novas</h3>
+				<h5><i>Artistic Director</i></h5>
+				<p>Dayi graduated from The Cooper Union in 2020 and has been designing books, typefaces, websites, branding & identity, etc. She has worked on projects for Alexandria Ocasio Cortez, HBO, Sacha Baron Cohen, Sean King, Mike Cloud, Julie Harris &mdash; but most of the time, thankfully, she works as a tattoo artist in her studio in Brooklyn. Find her work <a href="http://novasdayi.com/" target="_blank">here</a>.</p>
+			</div>
+		</div>
 
-		<h3 class="pt-3">Evan Murphy</h3>
-		<h5><i>Webmaster</i></h5>
-		<p>bio</p>
+		<div class="row pt-3">
+			<div class="col-3 d-none d-md-block">
+				<img src="/images/evan.png" style="width: 100%; border: 2px solid #c14e0e;">
+			</div>
+			<div class="col">
+				<h3>Evan Murphy</h3>
+				<h5><i>Webmaster</i></h5>
+				<p>bio</p>
+			</div>
+		</div>
 
-		<h3 class="pt-3">Jonathan Lam</h3>
-		<h5><i>Webmaster</i></h5>
-		<p>bio</p>
+		<div class="row pt-3">
+			<div class="col-3 d-none d-md-block">
+				<img src="/images/jonathan.png" style="width: 100%; border: 2px solid #c14e0e;">
+			</div>
+			<div class="col">
+				<h3>Jonathan Lam</h3>
+				<h5><i>Webmaster</i></h5>
+				<p>bio</p>
+			</div>
+		</div>
 
-		<h3 class="pt-3">Lionel Gilliar-Schoenenberger</h3>
-		<h5><i>Student Representative</i></h5>
-		<p>bio</p>
+		<div class="row pt-3">
+			<div class="col-3 d-none d-md-block">
+				<img src="/images/lionel.png" style="width: 100%; border: 2px solid #c14e0e;">
+			</div>
+			<div class="col">
+				<h3>Lionel Gilliar-Schoenenberger</h3>
+				<h5><i>Student Representative</i></h5>
+				<p>Lionel Gilliar-Schoenenberger’s background consists of work as a flea market vendor, custom fabricator and endeavors to address climate change through waste management, in addition to studying Civil Engineering (‘23).</p>
+			</div>
+		</div>
 	</div>
 
 </template>
