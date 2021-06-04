@@ -40,6 +40,10 @@
 				<div v-for="item in project.vid" class="vid">
 					<iframe width="100%" height="300" :src="item" title="video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
+				<div v-for="item in project.pdf" class="pdf">
+					<iframe :src="item" width="100%" height="300"></iframe>
+					<p style="font-size: 12px;">Click <img src="/images/new-tab.svg" style="height: 1em;"> above to view in a new tab.</p>
+				</div>
 				<div v-for="item in project.img">
 					<a :href="item" data-lightbox="project-image">
 						<img :src="item" class="project-image w-100">
@@ -91,6 +95,7 @@ export default defineComponent({
 				desc: '',
 				img: [],
 				vid: [],
+				pdf: [],
 				website: ''
 			}
 		};
