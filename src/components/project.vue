@@ -42,7 +42,7 @@
 				</div>
 				<div v-for="item in project.pdf" class="pdf">
 					<iframe :src="item" width="100%" height="300"></iframe>
-					<p style="font-size: 12px;">Click <img src="/images/new-tab.svg" style="height: 1em;"> above to view in a new tab.</p>
+					<p>Click <img src="/images/new-tab.svg" style="height: 1em;"> above to view in a new tab.</p>
 				</div>
 				<div v-for="item in project.img">
 					<a :href="item" data-lightbox="project-image">
@@ -120,5 +120,10 @@ export default defineComponent({
 	.project-image {
 		border: 2px solid #c14e0e;
 		margin-bottom: 40px;
+	}
+
+	.pdf p{
+		font-size: 12px;
+		font-style: italic;
 	}
 </style>
