@@ -43,7 +43,7 @@
 			<div class="col">
 				<h3>Jonathan Lam</h3>
 				<h5><i>Webmaster</i></h5>
-				<p>bio</p>
+				<p>Jon is a rising senior EE interested in compiler and OS design. Currently infatuated with Colemak, Emacs, and Lisp. <a href="https://lambdalambda.ninja" target="_blank">Website.</a></p>
 			</div>
 		</div>
 
