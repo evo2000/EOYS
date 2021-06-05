@@ -75,9 +75,9 @@
 		"tags": ["Design", "Interdisciplinary"],
 		"desc": "Cooper Motorsports builds an open-wheel formula style racecar, delivering hands on learning experiences to over 40 college students and a community of over 160 alumni and high school students.",
 		"abstract": "Cooper Union Motorsports is The Cooper Union’s Formula SAE team, founded in 1994. With dedicated students from the engineering, art, and architecture schools of The Cooper Union, the team has built an interdisciplinary family of individuals brought together by their passion for testing the limits of their technical skills and creativity. We are in this to create more than a vehicle: We want to create a rolling work of art. A vehicle that is not only fast, but beautiful to watch and an experience to drive.",
-		"vid": ["https://www.youtube.com/embed/r11gUK5taqc", "https://drive.google.com/file/d/1hwhdYE0mwQDb6dn7KZaebMiQ4vDOeuhU/preview"],
-		"img": ["https://drive.google.com/uc?export=view&id=1MSi1j7GuWNBGdoc53nqR7TAxtbdaFlXp"],
-		"pdf": ["https://drive.google.com/uc?export=view&id=16CB3tQ5UvgODg0ZmTj5wBPMLRcufW_aU"],
+		"vid": ["https://www.youtube.com/embed/r11gUK5taqc"],
+		"img": ["https://drive.google.com/uc?export=view&id=16CB3tQ5UvgODg0ZmTj5wBPMLRcufW_aU", "https://drive.google.com/uc?export=view&id=1MSi1j7GuWNBGdoc53nqR7TAxtbdaFlXp"],
+		"pdf": ["https://drive.google.com/file/d/1hwhdYE0mwQDb6dn7KZaebMiQ4vDOeuhU/preview"],
 		"website": "http://fsae.cooper.edu/"
 	},
 	{
