@@ -31,7 +31,7 @@
 			</div>
 			<div class="col">
 				<h3>Evan Murphy</h3>
-				<h5><i>Webmaster</i></h5>
+				<h5><i>Webmaster &mdash; Front-end</i></h5>
 				<p>bio</p>
 			</div>
 		</div>
@@ -42,8 +42,8 @@
 			</div>
 			<div class="col">
 				<h3>Jonathan Lam</h3>
-				<h5><i>Webmaster</i></h5>
-				<p>Jon is a rising senior EE interested in compiler and OS design. Currently infatuated with Colemak, Emacs, and Lisp. <a href="https://lambdalambda.ninja" target="_blank">Website.</a></p>
+				<h5><i>Webmaster &mdash; Infrastructure</i></h5>
+				<p>Jon is a rising senior EE interested in compiler and OS design. He is currently interning at MathWorks and infatuated with Colemak, Emacs, and Lisp. <a href="https://lambdalambda.ninja" target="_blank">Website.</a></p>
 			</div>
 		</div>
 
