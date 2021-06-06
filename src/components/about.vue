@@ -32,7 +32,7 @@
 			<div class="col">
 				<h3>Evan Murphy</h3>
 				<h5><i>Webmaster &mdash; Front-end</i></h5>
-				<p>bio</p>
+				<p>Evan currently studies Electrical Engineering at Cooper. He has been tinkering with electronics and building things for years, and is most interested in audio electronics and avionics design. He's also been setting up websites for his friends since high school.</p>
 			</div>
 		</div>
 
