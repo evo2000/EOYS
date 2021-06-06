@@ -1,5 +1,3 @@
-<!-- TODO: allow for search from URL params -->
-
 <template>
     <div class="container">
         <div class="row">
@@ -57,13 +55,13 @@
                         <b>No projects match the current search filters.</b>
                     </ul>
 
-                    <router-link v-for="(project, id) of projectsList"
+                    <router-link v-for="project of projectsList"
                                  :key="project.title"
                                  class="list-group-item"
                                  :class="{active: currentProject && currentProject.title === project.title}"
                                  @mouseenter="currentProject = project"
                                  @mouseleave="currentProject = currentProject.title === project.title ? null : currentProject"
-                                 :to="'/projects/' + id">
+                                 :to="'/projects/' + project.index">
 
                         <b>{{project.title}}</b> &mdash; <em>{{project.authors}}</em>
                     </router-link>
@@ -78,6 +76,9 @@
   import {defineComponent} from 'vue';
 
   projectsJson.sort((p1, p2) => p1.title.localeCompare(p2.title));
+
+  // give each project their (alphabetically-sorted) id
+  projectsJson.forEach((proj, index) => proj.index = index);
 
   export default defineComponent({
     name: 'ProjectList',

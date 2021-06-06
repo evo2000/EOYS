@@ -75,6 +75,10 @@ import projectsJson from '../projects.json';
 import {defineComponent} from 'vue';
 import PageNotFound from './page-not-found.vue';
 
+// this is to make sure the indices are correct
+// in future versions of the url should probably use a named version
+projectsJson.sort((p1, p2) => p1.title.localeCompare(p2.title));
+
 export default defineComponent({
 	name: 'project',
 
