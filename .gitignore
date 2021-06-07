@@ -6,3 +6,6 @@ dist-ssr
 
 # JetBrains files
 .idea
+
+# Temporary files (Emacs/ViM)
+*~
