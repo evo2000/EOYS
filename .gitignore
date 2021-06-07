@@ -3,3 +3,9 @@ node_modules
 dist
 dist-ssr
 *.local
+
+# JetBrains files
+.idea
+
+# Temporary files (Emacs/ViM)
+*~
