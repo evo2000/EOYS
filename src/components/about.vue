@@ -20,7 +20,7 @@
 			</div>
 			<div class="col">
 				<h3>Dayi Novas</h3>
-				<h5><i>Artistic Director</i></h5>
+				<h5><i>Art Director</i></h5>
 				<p>Dayi graduated from The Cooper Union in 2020 and has been designing books, typefaces, websites, branding & identity, etc. She has worked on projects for Alexandria Ocasio Cortez, HBO, Sacha Baron Cohen, Sean King, Mike Cloud, Julie Harris &mdash; but most of the time, thankfully, she works as a tattoo artist in her studio in Brooklyn. Find her work <a href="http://novasdayi.com/" target="_blank">here</a>.</p>
 			</div>
 		</div>
