@@ -16,7 +16,7 @@
 
 		<div class="row pt-3">
 			<div class="col-3 d-none d-md-block">
-				<img src="/images/dayi.png" style="width: 100%; border: 2px solid #c14e0e;">
+				<img src="/images/team/dayi.jpg" style="width: 100%; border: 2px solid #c14e0e;">
 			</div>
 			<div class="col">
 				<h3>Dayi Novas</h3>
@@ -27,7 +27,7 @@
 
 		<div class="row pt-3">
 			<div class="col-3 d-none d-md-block">
-				<img src="/images/evan.png" style="width: 100%; border: 2px solid #c14e0e;">
+				<img src="/images/team/evan.jpg" style="width: 100%; border: 2px solid #c14e0e;">
 			</div>
 			<div class="col">
 				<h3>Evan Murphy</h3>
@@ -38,7 +38,7 @@
 
 		<div class="row pt-3">
 			<div class="col-3 d-none d-md-block">
-				<img src="/images/jonathan.png" style="width: 100%; border: 2px solid #c14e0e;">
+				<img src="/images/team/jonathan.jpg" style="width: 100%; border: 2px solid #c14e0e;">
 			</div>
 			<div class="col">
 				<h3>Jonathan Lam</h3>
@@ -49,7 +49,7 @@
 
 		<div class="row pt-3">
 			<div class="col-3 d-none d-md-block">
-				<img src="/images/lionel.png" style="width: 100%; border: 2px solid #c14e0e;">
+				<img src="/images/team/lionel.jpg" style="width: 100%; border: 2px solid #c14e0e;">
 			</div>
 			<div class="col">
 				<h3>Lionel Gilliar-Schoenenberger</h3>
